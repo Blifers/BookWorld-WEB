@@ -28,5 +28,10 @@ namespace BookWorld_WEB
         {
             Response.Redirect("Goods.aspx");
         }
+
+        protected void SellLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Sell.aspx");
+        }
     }
 }

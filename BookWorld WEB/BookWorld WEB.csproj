@@ -70,6 +70,7 @@
     <Content Include="default.aspx" />
     <Content Include="Genres.aspx" />
     <Content Include="Goods.aspx" />
+    <Content Include="Sell.aspx" />
     <Content Include="Types.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -96,6 +97,13 @@
       <DependentUpon>Goods.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sell.aspx.cs">
+      <DependentUpon>Sell.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sell.aspx.designer.cs">
+      <DependentUpon>Sell.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Types.aspx.cs">
       <DependentUpon>Types.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -13,6 +13,7 @@
             <asp:LinkButton ID="GenresLinkButton" runat="server" OnClick="GenresLinkButton_Click">Жанры</asp:LinkButton><br />
             <asp:LinkButton ID="TypesLinkButton" runat="server" OnClick="TypesLinkButton_Click">Типы товаров</asp:LinkButton><br />
             <asp:LinkButton ID="GoodsLinkButton" runat="server" OnClick="GoodsLinkButton_Click">Товары</asp:LinkButton><br />
+            <asp:LinkButton ID="SellLinkButton" runat="server" OnClick="SellLinkButton_Click">Продажа</asp:LinkButton><br />
         </div>
     </form>
 </body>
