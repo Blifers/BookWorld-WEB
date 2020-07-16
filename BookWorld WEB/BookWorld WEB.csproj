@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="Genres.aspx" />
+    <Content Include="GenresXmlJson.aspx" />
     <Content Include="Goods.aspx" />
     <Content Include="Sell.aspx" />
     <Content Include="Types.aspx" />
@@ -90,6 +91,13 @@
     </Compile>
     <Compile Include="Genres.aspx.designer.cs">
       <DependentUpon>Genres.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenresXmlJson.aspx.cs">
+      <DependentUpon>GenresXmlJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenresXmlJson.aspx.designer.cs">
+      <DependentUpon>GenresXmlJson.aspx</DependentUpon>
     </Compile>
     <Compile Include="Goods.aspx.cs">
       <DependentUpon>Goods.aspx</DependentUpon>

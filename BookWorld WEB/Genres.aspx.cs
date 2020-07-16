@@ -40,5 +40,16 @@ namespace BookWorld_WEB
                 TitleTextBox.Focus();
             }
         }
+
+        protected void XmlLinkButton_Click(object sender, EventArgs e)
+        {
+            var controller = new Controller(true);
+
+        }
+
+        protected void JsonLinkButton_Click(object sender, EventArgs e)
+        {
+            var controller = new Controller(false);
+        }
     }
 }
