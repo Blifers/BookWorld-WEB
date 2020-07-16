@@ -33,5 +33,15 @@ namespace BookWorld_WEB
         {
             Response.Redirect("Sell.aspx");
         }
+
+        protected void CustomersLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Customers.aspx");
+        }
+
+        protected void WorkersLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Workers.aspx");
+        }
     }
 }

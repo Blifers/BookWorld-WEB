@@ -13,5 +13,10 @@ namespace BookWorld_WEB
         {
 
         }
+
+        protected void BackToDefaultLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("default.aspx");
+        }
     }
 }

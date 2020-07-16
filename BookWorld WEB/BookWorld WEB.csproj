@@ -73,6 +73,8 @@
     <Content Include="Sell.aspx" />
     <Content Include="Types.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Customers.aspx" />
+    <Content Include="Workers.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="default.aspx.cs">
@@ -110,6 +112,20 @@
     </Compile>
     <Compile Include="Types.aspx.designer.cs">
       <DependentUpon>Types.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Workers.aspx.cs">
+      <DependentUpon>Workers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Workers.aspx.designer.cs">
+      <DependentUpon>Workers.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

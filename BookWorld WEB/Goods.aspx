@@ -5,10 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Товары</title>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1 class="auto-style1">Товары</h1>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Код_Товара" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowPaging="True" AllowSorting="True" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
                 <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
@@ -29,7 +35,7 @@
                 <SortedDescendingCellStyle BackColor="#CAC9C9" />
                 <SortedDescendingHeaderStyle BackColor="#383838" />
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BookWorldDataBaseConnectionString1 %>" DeleteCommand="DELETE FROM [Товары] WHERE [Код_Товара] = @Код_Товара" InsertCommand="INSERT INTO [Товары] ([Тип_Товара], [Жанр], [Наименование], [Цена], [Остаток]) VALUES (@Тип_Товара, @Жанр, @Наименование, @Цена, @Остаток)" ProviderName="<%$ ConnectionStrings:BookWorldDataBaseConnectionString3.ProviderName %>" SelectCommand="SELECT [Код_Товара], [Тип_Товара], [Жанр], [Наименование], [Цена], [Остаток] FROM [Товары]" UpdateCommand="UPDATE [Товары] SET [Тип_Товара] = @Тип_Товара, [Жанр] = @Жанр, [Наименование] = @Наименование, [Цена] = @Цена, [Остаток] = @Остаток WHERE [Код_Товара] = @Код_Товара">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BookWorldDataBaseConnectionString1 %>" DeleteCommand="DELETE FROM [Товары] WHERE [Код_Товара] = @Код_Товара" InsertCommand="INSERT INTO [Товары] ([Тип_Товара], [Жанр], [Наименование], [Цена], [Остаток]) VALUES (@Тип_Товара, @Жанр, @Наименование, @Цена, @Остаток)" ProviderName="<%$ ConnectionStrings:BookWorldDataBaseConnectionString1.ProviderName %>" SelectCommand="SELECT [Код_Товара], [Тип_Товара], [Жанр], [Наименование], [Цена], [Остаток] FROM [Товары]" UpdateCommand="UPDATE [Товары] SET [Тип_Товара] = @Тип_Товара, [Жанр] = @Жанр, [Наименование] = @Наименование, [Цена] = @Цена, [Остаток] = @Остаток WHERE [Код_Товара] = @Код_Товара">
                 <DeleteParameters>
                     <asp:Parameter Name="Код_Товара" Type="Int32" />
                 </DeleteParameters>

@@ -24,7 +24,7 @@ namespace BookWorld_WEB
         {
             if (TitleTextBox.Text != "" && TitleTextBox.Text != " ")
             {
-                SqlConnection Connection = new SqlConnection("workstation id=BookWorldDataBase.mssql.somee.com;packet size=4096;user id=PaninI_SQLLogin_1;pwd=Gthley123;data source=BookWorldDataBase.mssql.somee.com;persist security info=False;initial catalog=BookWorldDataBase");
+                SqlConnection Connection = new SqlConnection("workstation id=BookWorldDataBase.mssql.somee.com;packet size=4096;user id=PaninI_SQLLogin_1;pwd=CegthGhfrnbrf1;data source=BookWorldDataBase.mssql.somee.com;persist security info=False;initial catalog=BookWorldDataBase");
 
                 SqlCommand Command = new SqlCommand("INSERT INTO Тип_Товара VALUES (@Наименование)", Connection);
                 SqlParameter p1 = new SqlParameter("Наименование", TitleTextBox.Text);

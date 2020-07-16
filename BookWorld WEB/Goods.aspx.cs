@@ -23,7 +23,7 @@ namespace BookWorld_WEB
         protected void AddButton_Click(object sender, EventArgs e)
         {
             
-            SqlConnection Connection = new SqlConnection("workstation id=BookWorldDataBase.mssql.somee.com;packet size=4096;user id=PaninI_SQLLogin_1;pwd=Gthley123;data source=BookWorldDataBase.mssql.somee.com;persist security info=False;initial catalog=BookWorldDataBase");
+            SqlConnection Connection = new SqlConnection("workstation id=BookWorldDataBase.mssql.somee.com;packet size=4096;user id=PaninI_SQLLogin_1;pwd=CegthGhfrnbrf1;data source=BookWorldDataBase.mssql.somee.com;persist security info=False;initial catalog=BookWorldDataBase");
             SqlParameter type = new SqlParameter("Тип_Товара", TypeDropDown.SelectedValue);
             SqlParameter title = new SqlParameter("Наименование", TitleTextBox.Text);
             SqlParameter price = new SqlParameter("Цена", PriceTextBox.Text);

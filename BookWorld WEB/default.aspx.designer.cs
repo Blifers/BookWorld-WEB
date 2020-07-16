@@ -51,12 +51,21 @@ namespace BookWorld_WEB
         protected global::System.Web.UI.WebControls.LinkButton GoodsLinkButton;
 
         /// <summary>
-        /// SellLinkButton control.
+        /// CustomersLinkButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton SellLinkButton;
+        protected global::System.Web.UI.WebControls.LinkButton CustomersLinkButton;
+
+        /// <summary>
+        /// WorkersLinkButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton WorkersLinkButton;
     }
 }

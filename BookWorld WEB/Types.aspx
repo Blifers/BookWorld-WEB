@@ -5,10 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Типы товаров</title>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1 class="auto-style1">Типы товаров</h1>
             <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataKeyNames="Код_Типа" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." ForeColor="Black" GridLines="Vertical" ShowHeaderWhenEmpty="True">
                 <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
@@ -25,7 +31,7 @@
                 <SortedDescendingCellStyle BackColor="#CAC9C9" />
                 <SortedDescendingHeaderStyle BackColor="#383838" />
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BookWorldDataBaseConnectionString1 %>" DeleteCommand="DELETE FROM [Тип_Товара] WHERE [Код_Типа] = @Код_Типа" InsertCommand="INSERT INTO [Тип_Товара] ([Наименование]) VALUES (@Наименование)" ProviderName="<%$ ConnectionStrings:BookWorldDataBaseConnectionString2.ProviderName %>" SelectCommand="SELECT [Код_Типа], [Наименование] FROM [Тип_Товара]" UpdateCommand="UPDATE [Тип_Товара] SET [Наименование] = @Наименование WHERE [Код_Типа] = @Код_Типа">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BookWorldDataBaseConnectionString1 %>" DeleteCommand="DELETE FROM [Тип_Товара] WHERE [Код_Типа] = @Код_Типа" InsertCommand="INSERT INTO [Тип_Товара] ([Наименование]) VALUES (@Наименование)" ProviderName="<%$ ConnectionStrings:BookWorldDataBaseConnectionString1.ProviderName %>" SelectCommand="SELECT [Код_Типа], [Наименование] FROM [Тип_Товара]" UpdateCommand="UPDATE [Тип_Товара] SET [Наименование] = @Наименование WHERE [Код_Типа] = @Код_Типа">
                 <DeleteParameters>
                     <asp:Parameter Name="Код_Типа" Type="Int32" />
                 </DeleteParameters>
