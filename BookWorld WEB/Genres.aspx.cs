@@ -43,13 +43,12 @@ namespace BookWorld_WEB
 
         protected void XmlLinkButton_Click(object sender, EventArgs e)
         {
-            var controller = new Controller(true);
-
+            Response.Redirect("XmlJsonForm.aspx?table=жанры&isxml=true");
         }
 
         protected void JsonLinkButton_Click(object sender, EventArgs e)
         {
-            var controller = new Controller(false);
+            Response.Redirect("XmlJsonForm.aspx?table=жанры&isxml=false");
         }
     }
 }

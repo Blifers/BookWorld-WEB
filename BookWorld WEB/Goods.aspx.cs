@@ -55,5 +55,15 @@ namespace BookWorld_WEB
                 Response.Redirect("Goods.aspx");
             }
         }
+
+        protected void XmlLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("XmlJsonForm.aspx?table=товары&isxml=true");
+        }
+
+        protected void JsonLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("XmlJsonForm.aspx?table=товары&isxml=false");
+        }
     }
 }

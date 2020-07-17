@@ -69,13 +69,13 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="Genres.aspx" />
-    <Content Include="GenresXmlJson.aspx" />
     <Content Include="Goods.aspx" />
     <Content Include="Sell.aspx" />
     <Content Include="Types.aspx" />
     <Content Include="Web.config" />
     <Content Include="Customers.aspx" />
     <Content Include="Workers.aspx" />
+    <Content Include="XmlJsonForm.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="default.aspx.cs">
@@ -91,13 +91,6 @@
     </Compile>
     <Compile Include="Genres.aspx.designer.cs">
       <DependentUpon>Genres.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GenresXmlJson.aspx.cs">
-      <DependentUpon>GenresXmlJson.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GenresXmlJson.aspx.designer.cs">
-      <DependentUpon>GenresXmlJson.aspx</DependentUpon>
     </Compile>
     <Compile Include="Goods.aspx.cs">
       <DependentUpon>Goods.aspx</DependentUpon>
@@ -134,6 +127,13 @@
     </Compile>
     <Compile Include="Workers.aspx.designer.cs">
       <DependentUpon>Workers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlJsonForm.aspx.cs">
+      <DependentUpon>XmlJsonForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XmlJsonForm.aspx.designer.cs">
+      <DependentUpon>XmlJsonForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
