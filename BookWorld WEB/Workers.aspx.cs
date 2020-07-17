@@ -37,9 +37,14 @@ namespace BookWorld_WEB
             Response.Redirect("Workers.aspx");
         }
 
-        protected void BirthDateCalendar_SelectionChanged(object sender, EventArgs e)
+        protected void XmlLinkButton_Click(object sender, EventArgs e)
         {
+            Response.Redirect("XmlJsonForCatalogs.aspx?table=сотрудники&isxml=true");
+        }
 
+        protected void JsonLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("XmlJsonForCatalogs.aspx?table=сотрудники&isxml=false");
         }
     }
 }

@@ -15,9 +15,39 @@ namespace BookWorld_WEB
         private string TableName;
         private string SelStringForGoods = "Select * From Товары ";
         private string SelStringForGenres = "Select * from Жанры ";
+        private string SelStringForTypes = "Select * from Тип_Товара ";
+        private string SelStringForCustomers = "Select * from Постоянные_Клиенты ";
+        private string SelStringForWorkers = "Select * from Сотрудники ";
         private bool IsXML;
         private string CommandText;
         private bool cnt = true;
+
+
+        protected void BackToPreviousLinkButton_Click(object sender, EventArgs e)
+        {
+            switch (TableName)
+            {
+                case "товары":
+                    Response.Redirect("Goods.aspx");
+                    break;
+                case "жанры":
+                    Response.Redirect("Genres.aspx");
+                    break;
+                case "тип":
+                    Response.Redirect("Types.aspx");
+                    break;
+                case "сотрудники":
+                    Response.Redirect("Workers.aspx");
+                    break;
+                case "клиенты":
+                    Response.Redirect("Customers.aspx");
+                    break;
+                default:
+                    Response.Redirect("default.aspx");
+                    break;
+            }
+        }
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -38,6 +68,24 @@ namespace BookWorld_WEB
                         CommandText = SelStringForGenres + "for XML AUTO";
                     else
                         CommandText = SelStringForGenres + "for JSON AUTO";
+                    break;
+                case "тип":
+                    if (IsXML)
+                        CommandText = SelStringForTypes + "for XML AUTO";
+                    else
+                        CommandText = SelStringForTypes + "for JSON AUTO";
+                    break;
+                case "сотрудники":
+                    if (IsXML)
+                        CommandText = SelStringForWorkers + "for XML AUTO";
+                    else
+                        CommandText = SelStringForWorkers + "for JSON AUTO";
+                    break;
+                case "клиенты":
+                    if (IsXML)
+                        CommandText = SelStringForCustomers + "for XML AUTO";
+                    else
+                        CommandText = SelStringForCustomers + "for JSON AUTO";
                     break;
                 default:
                     Response.Clear();

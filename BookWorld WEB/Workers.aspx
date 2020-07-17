@@ -75,6 +75,11 @@
             <asp:Button ID="Button1" runat="server" Text="Добавить" OnClick="Button1_Click" />
         </div>
         <div>
+            <br />
+            <asp:LinkButton ID="XmlLinkButton" runat="server" OnClick="XmlLinkButton_Click">Посмотреть в XML</asp:LinkButton><br />
+            <asp:LinkButton ID="JsonLinkButton" runat="server" OnClick="JsonLinkButton_Click">Посмотреть в JSON</asp:LinkButton>
+        </div>
+        <div>
             <br /><br /><br />
             <asp:LinkButton ID="BackToDefaultLinkButton" runat="server" OnClick="BackToDefaultLinkButton_Click">Вернуться на главную</asp:LinkButton>
         </div>

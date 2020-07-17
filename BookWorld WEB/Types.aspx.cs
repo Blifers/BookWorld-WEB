@@ -40,5 +40,15 @@ namespace BookWorld_WEB
                 TitleTextBox.Focus();
             }
         }
+
+        protected void XmlLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("XmlJsonForCatalogs.aspx?table=тип&isxml=true");
+        }
+
+        protected void JsonLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("XmlJsonForCatalogs.aspx?table=тип&isxml=false");
+        }
     }
 }

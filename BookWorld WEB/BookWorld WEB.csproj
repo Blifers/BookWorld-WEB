@@ -75,7 +75,7 @@
     <Content Include="Web.config" />
     <Content Include="Customers.aspx" />
     <Content Include="Workers.aspx" />
-    <Content Include="XmlJsonForm.aspx" />
+    <Content Include="XmlJsonForCatalogs.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="default.aspx.cs">
@@ -128,12 +128,12 @@
     <Compile Include="Workers.aspx.designer.cs">
       <DependentUpon>Workers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="XmlJsonForm.aspx.cs">
-      <DependentUpon>XmlJsonForm.aspx</DependentUpon>
+    <Compile Include="XmlJsonForCatalogs.aspx.cs">
+      <DependentUpon>XmlJsonForCatalogs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="XmlJsonForm.aspx.designer.cs">
-      <DependentUpon>XmlJsonForm.aspx</DependentUpon>
+    <Compile Include="XmlJsonForCatalogs.aspx.designer.cs">
+      <DependentUpon>XmlJsonForCatalogs.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

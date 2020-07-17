@@ -35,10 +35,14 @@ namespace BookWorld_WEB
         {
             Response.Redirect("default.aspx");
         }
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void XmlLinkButton_Click(object sender, EventArgs e)
         {
+            Response.Redirect("XmlJsonForCatalogs.aspx?table=клиенты&isxml=true");
+        }
 
+        protected void JsonLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("XmlJsonForCatalogs.aspx?table=клиенты&isxml=false");
         }
     }
 }

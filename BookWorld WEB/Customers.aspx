@@ -18,7 +18,7 @@
     <form id="form1" runat="server">
         <div>
             <h1 class="auto-style1">Постоянные клиенты</h1>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Номер_Карты" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" ShowHeaderWhenEmpty="True">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Номер_Карты" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" ShowHeaderWhenEmpty="True">
                 <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -66,6 +66,11 @@
             <asp:TextBox ID="PhoneNumberTextBox" runat="server"></asp:TextBox><br /><br />
             <asp:Button ID="AddButton" runat="server" Text="Добавить" OnClick="AddButton_Click" />
             </div>
+        </div>
+        <div>
+            <br />
+            <asp:LinkButton ID="XmlLinkButton" runat="server" OnClick="XmlLinkButton_Click">Посмотреть в XML</asp:LinkButton><br />
+            <asp:LinkButton ID="JsonLinkButton" runat="server" OnClick="JsonLinkButton_Click">Посмотреть в JSON</asp:LinkButton>
         </div>
         <div>
             <br /><br /><br />
