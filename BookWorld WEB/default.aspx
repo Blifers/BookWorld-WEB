@@ -34,6 +34,11 @@
                 <asp:LinkButton ID="WorkersLinkButton" CssClass="auto-style3" runat="server" OnClick="WorkersLinkButton_Click">Сотрудники</asp:LinkButton>
                 <br />
             </div>
+            <div class="auto-style2">
+                <br />
+                <h3 class="auto-style2">Документы</h3>
+                <asp:LinkButton ID="SellsLinkButton" CssClass="auto-style3" runat="server" OnClick="SellsLinkButton_Click">Продажи</asp:LinkButton>
+            </div>
         </div>
     </form>
 </body>
