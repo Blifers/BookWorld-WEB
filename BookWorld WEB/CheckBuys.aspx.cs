@@ -86,16 +86,33 @@ namespace BookWorld_WEB
             }
         }
 
-        protected void DetailedBuys_Click(object sender, EventArgs e)
+        protected void DetailedBuysXML_Click(object sender, EventArgs e)
         {
-            Response.Redirect("XmlJsonForDetailedDocuments.aspx?issell=false&document=0");
+            Response.Redirect("XmlJsonForDetailedDocuments.aspx?isxml=true&issell=false&document=0");
         }
 
-        protected void DetailedBuyDocument_Click(object sender, EventArgs e)
+        protected void DetailedBuyDocumentXML_Click(object sender, EventArgs e)
         {
             try
             {
-                Response.Redirect("XmlJsonForDetailedDocuments.aspx?issell=false&document=" + GridView1.SelectedRow.Cells[1].Text);
+                Response.Redirect("XmlJsonForDetailedDocuments.aspx?isxml=true&issell=false&document=" + GridView1.SelectedRow.Cells[1].Text);
+            }
+            catch
+            {
+                Response.Write("<script>alert('Выберите документ')</script>");
+            }
+        }
+
+        protected void DetailedBuysJSON_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("XmlJsonForDetailedDocuments.aspx?isxml=false&issell=false&document=0");
+        }
+
+        protected void DetailedBuyDocumentJSON_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Response.Redirect("XmlJsonForDetailedDocuments.aspx?isxml=false&issell=false&document=" + GridView1.SelectedRow.Cells[1].Text);
             }
             catch
             {

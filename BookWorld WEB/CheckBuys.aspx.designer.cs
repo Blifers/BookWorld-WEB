@@ -42,22 +42,40 @@ namespace BookWorld_WEB
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// DetailedBuys control.
+        /// DetailedBuysXML control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton DetailedBuys;
+        protected global::System.Web.UI.WebControls.LinkButton DetailedBuysXML;
 
         /// <summary>
-        /// DetailedBuyDocument control.
+        /// DetailedBuyDocumentXML control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton DetailedBuyDocument;
+        protected global::System.Web.UI.WebControls.LinkButton DetailedBuyDocumentXML;
+
+        /// <summary>
+        /// DetailedBuysJSON control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DetailedBuysJSON;
+
+        /// <summary>
+        /// DetailedBuyDocumentJSON control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DetailedBuyDocumentJSON;
 
         /// <summary>
         /// HeadsInXML control.

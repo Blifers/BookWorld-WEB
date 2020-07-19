@@ -47,8 +47,10 @@
         <div>
             <br />
             <h4>Детальные документы</h4>
-            <asp:LinkButton ID="DetailedSells" runat="server" OnClick="DetailedSells_Click">Все документы</asp:LinkButton><br />
-            <asp:LinkButton ID="DetailedSellDocument" runat="server" OnClick="DetailedSellDocument_Click">Выбранный документ</asp:LinkButton>
+            <asp:LinkButton ID="DetailedSellsXML" runat="server" OnClick="DetailedSellsXML_Click">Все документы в XML</asp:LinkButton><br />
+            <asp:LinkButton ID="DetailedSellDocumentXML" runat="server" OnClick="DetailedSellDocumentXML_Click">Выбранный документ в XML</asp:LinkButton><br />
+            <asp:LinkButton ID="DetailedSellsJSON" runat="server" OnClick="DetailedSellsJSON_Click">Все документы в JSON</asp:LinkButton><br />
+            <asp:LinkButton ID="DetailedSellDocumentJSON" runat="server" OnClick="DetailedSellDocumentJSON_Click">Выбранный документ в JSON</asp:LinkButton>
         </div>
         <div>
             <br />
