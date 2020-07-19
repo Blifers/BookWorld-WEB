@@ -48,5 +48,10 @@ namespace BookWorld_WEB
         {
             Response.Redirect("CheckSells.aspx");
         }
+
+        protected void BuysLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CheckBuys.aspx");
+        }
     }
 }

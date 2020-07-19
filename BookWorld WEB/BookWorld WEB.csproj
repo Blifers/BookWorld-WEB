@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CheckBuys.aspx" />
     <Content Include="CheckSells.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Genres.aspx" />
@@ -76,9 +77,17 @@
     <Content Include="Customers.aspx" />
     <Content Include="Workers.aspx" />
     <Content Include="XmlJsonForCatalogs.aspx" />
+    <Content Include="XmlJsonForDetailedDocuments.aspx" />
     <Content Include="XmlJsonForDocuments.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckBuys.aspx.cs">
+      <DependentUpon>CheckBuys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckBuys.aspx.designer.cs">
+      <DependentUpon>CheckBuys.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CheckSells.aspx.cs">
       <DependentUpon>CheckSells.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,6 +144,13 @@
     </Compile>
     <Compile Include="XmlJsonForCatalogs.aspx.designer.cs">
       <DependentUpon>XmlJsonForCatalogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlJsonForDetailedDocuments.aspx.cs">
+      <DependentUpon>XmlJsonForDetailedDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XmlJsonForDetailedDocuments.aspx.designer.cs">
+      <DependentUpon>XmlJsonForDetailedDocuments.aspx</DependentUpon>
     </Compile>
     <Compile Include="XmlJsonForDocuments.aspx.cs">
       <DependentUpon>XmlJsonForDocuments.aspx</DependentUpon>

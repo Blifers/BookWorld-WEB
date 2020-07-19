@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
-using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace BookWorld_WEB
 {
-    public partial class CheckSells : System.Web.UI.Page
+    public partial class CheckBuys : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,19 +20,19 @@ namespace BookWorld_WEB
 
         protected void HeadsInXML_Click(object sender, EventArgs e)
         {
-            Response.Redirect("XmlJsonForDocuments.aspx?isxml=true&isheader=true&document=0&issell=true");
+            Response.Redirect("XmlJsonForDocuments.aspx?isxml=true&isheader=true&document=0&issell=false");
         }
 
         protected void HeadsInJSON_Click(object sender, EventArgs e)
         {
-            Response.Redirect("XmlJsonForDocuments.aspx?isxml=false&isheader=true&document=0&issell=true");
+            Response.Redirect("XmlJsonForDocuments.aspx?isxml=false&isheader=true&document=0&issell=false");
         }
 
         protected void HeadInXML_Click(object sender, EventArgs e)
         {
             try
             {
-                Response.Redirect("XmlJsonForDocuments.aspx?isxml=true&isheader=true&document=" + GridView1.SelectedRow.Cells[1].Text + "&issell=true");
+                Response.Redirect("XmlJsonForDocuments.aspx?isxml=true&isheader=true&document=" + GridView1.SelectedRow.Cells[1].Text + "&issell=false");
             }
             catch
             {
@@ -47,7 +44,7 @@ namespace BookWorld_WEB
         {
             try
             {
-                Response.Redirect("XmlJsonForDocuments.aspx?isxml=false&isheader=true&document=" + GridView1.SelectedRow.Cells[1].Text + "&issell=true");
+                Response.Redirect("XmlJsonForDocuments.aspx?isxml=false&isheader=true&document=" + GridView1.SelectedRow.Cells[1].Text + "&issell=false");
             }
             catch
             {
@@ -57,19 +54,19 @@ namespace BookWorld_WEB
 
         protected void DocsInXML_Click(object sender, EventArgs e)
         {
-            Response.Redirect("XmlJsonForDocuments.aspx?isxml=true&isheader=false&document=0&issell=true");
+            Response.Redirect("XmlJsonForDocuments.aspx?isxml=true&isheader=false&document=0&issell=false");
         }
 
         protected void DocsInJSON_Click(object sender, EventArgs e)
         {
-            Response.Redirect("XmlJsonForDocuments.aspx?isxml=false&isheader=false&document=0&issell=true");
+            Response.Redirect("XmlJsonForDocuments.aspx?isxml=false&isheader=false&document=0&issell=false");
         }
 
         protected void DocInXML_Click(object sender, EventArgs e)
         {
             try
             {
-                Response.Redirect("XmlJsonForDocuments.aspx?isxml=true&isheader=false&document=" + GridView1.SelectedRow.Cells[1].Text + "&issell=true");
+                Response.Redirect("XmlJsonForDocuments.aspx?isxml=true&isheader=false&document=" + GridView1.SelectedRow.Cells[1].Text + "&issell=false");
             }
             catch
             {
@@ -81,7 +78,7 @@ namespace BookWorld_WEB
         {
             try
             {
-                Response.Redirect("XmlJsonForDocuments.aspx?isxml=false&isheader=false&document=" + GridView1.SelectedRow.Cells[1].Text + "&issell=true");
+                Response.Redirect("XmlJsonForDocuments.aspx?isxml=false&isheader=false&document=" + GridView1.SelectedRow.Cells[1].Text + "&issell=false");
             }
             catch
             {
@@ -89,21 +86,21 @@ namespace BookWorld_WEB
             }
         }
 
-        protected void DetailedSells_Click(object sender, EventArgs e)
+        protected void DetailedBuys_Click(object sender, EventArgs e)
         {
-            Response.Redirect("XmlJsonForDetailedDocuments.aspx?issell=true&document=0");
+            Response.Redirect("XmlJsonForDetailedDocuments.aspx?issell=false&document=0");
         }
 
-        protected void DetailedSellDocument_Click(object sender, EventArgs e)
+        protected void DetailedBuyDocument_Click(object sender, EventArgs e)
         {
             try
             {
-                Response.Redirect("XmlJsonForDetailedDocuments.aspx?issell=true&document=" + GridView1.SelectedRow.Cells[1].Text);
+                Response.Redirect("XmlJsonForDetailedDocuments.aspx?issell=false&document=" + GridView1.SelectedRow.Cells[1].Text);
             }
             catch
             {
                 Response.Write("<script>alert('Выберите документ')</script>");
             }
         }
-    } 
+    }
 }

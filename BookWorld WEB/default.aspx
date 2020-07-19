@@ -37,7 +37,8 @@
             <div class="auto-style2">
                 <br />
                 <h3 class="auto-style2">Документы</h3>
-                <asp:LinkButton ID="SellsLinkButton" CssClass="auto-style3" runat="server" OnClick="SellsLinkButton_Click">Продажи</asp:LinkButton>
+                <asp:LinkButton ID="SellsLinkButton" CssClass="auto-style3" runat="server" OnClick="SellsLinkButton_Click">Продажи</asp:LinkButton><br />
+                <asp:LinkButton ID="BuysLinkButton" CssClass="auto-style3" runat="server" OnClick="BuysLinkButton_Click">Приходы</asp:LinkButton>
             </div>
         </div>
     </form>

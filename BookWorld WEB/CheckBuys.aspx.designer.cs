@@ -11,7 +11,7 @@ namespace BookWorld_WEB
 {
 
 
-    public partial class CheckSells
+    public partial class CheckBuys
     {
 
         /// <summary>
@@ -42,22 +42,22 @@ namespace BookWorld_WEB
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// DetailedSells control.
+        /// DetailedBuys control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton DetailedSells;
+        protected global::System.Web.UI.WebControls.LinkButton DetailedBuys;
 
         /// <summary>
-        /// DetailedSellDocument control.
+        /// DetailedBuyDocument control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton DetailedSellDocument;
+        protected global::System.Web.UI.WebControls.LinkButton DetailedBuyDocument;
 
         /// <summary>
         /// HeadsInXML control.

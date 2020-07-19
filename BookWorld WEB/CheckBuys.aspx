@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CheckSells.aspx.cs" Inherits="BookWorld_WEB.CheckSells" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CheckBuys.aspx.cs" Inherits="BookWorld_WEB.CheckBuys" %>
 
 <!DOCTYPE html>
 
@@ -9,14 +9,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Номер_Продажи" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+            <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataKeyNames="Номер_Прихода" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." ForeColor="Black" GridLines="Vertical">
                 <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
-                    <asp:BoundField DataField="Номер_Продажи" HeaderText="Номер_Продажи" ReadOnly="True" SortExpression="Номер_Продажи" />
+                    <asp:BoundField DataField="Номер_Прихода" HeaderText="Номер_Прихода" ReadOnly="True" SortExpression="Номер_Прихода" />
                     <asp:BoundField DataField="Дата" HeaderText="Дата" SortExpression="Дата" />
-                    <asp:BoundField DataField="Номер_Карты" HeaderText="Номер_Карты" SortExpression="Номер_Карты" />
-                    <asp:BoundField DataField="Сумма_Продажи" HeaderText="Сумма_Продажи" SortExpression="Сумма_Продажи" />
+                    <asp:BoundField DataField="Комментарий" HeaderText="Комментарий" SortExpression="Комментарий" />
                 </Columns>
                 <FooterStyle BackColor="#CCCCCC" />
                 <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
@@ -27,28 +26,26 @@
                 <SortedDescendingCellStyle BackColor="#CAC9C9" />
                 <SortedDescendingHeaderStyle BackColor="#383838" />
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BookWorldDataBaseConnectionString1 %>" DeleteCommand="DELETE FROM [Продажа] WHERE [Номер_Продажи] = @Номер_Продажи" InsertCommand="INSERT INTO [Продажа] ([Дата], [Номер_Карты], [Сумма_Продажи]) VALUES (@Дата, @Номер_Карты, @Сумма_Продажи)" ProviderName="<%$ ConnectionStrings:BookWorldDataBaseConnectionString2.ProviderName %>" SelectCommand="SELECT [Номер_Продажи], [Дата], [Номер_Карты], [Сумма_Продажи] FROM [Продажа]" UpdateCommand="UPDATE [Продажа] SET [Дата] = @Дата, [Номер_Карты] = @Номер_Карты, [Сумма_Продажи] = @Сумма_Продажи WHERE [Номер_Продажи] = @Номер_Продажи">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BookWorldDataBaseConnectionString2 %>" DeleteCommand="DELETE FROM [Приход] WHERE [Номер_Прихода] = @Номер_Прихода" InsertCommand="INSERT INTO [Приход] ([Дата], [Комментарий]) VALUES (@Дата, @Комментарий)" ProviderName="<%$ ConnectionStrings:BookWorldDataBaseConnectionString2.ProviderName %>" SelectCommand="SELECT [Номер_Прихода], [Дата], [Комментарий] FROM [Приход]" UpdateCommand="UPDATE [Приход] SET [Дата] = @Дата, [Комментарий] = @Комментарий WHERE [Номер_Прихода] = @Номер_Прихода">
                 <DeleteParameters>
-                    <asp:Parameter Name="Номер_Продажи" Type="Int32" />
+                    <asp:Parameter Name="Номер_Прихода" Type="Int32" />
                 </DeleteParameters>
                 <InsertParameters>
                     <asp:Parameter DbType="Date" Name="Дата" />
-                    <asp:Parameter Name="Номер_Карты" Type="Int32" />
-                    <asp:Parameter Name="Сумма_Продажи" Type="Decimal" />
+                    <asp:Parameter Name="Комментарий" Type="String" />
                 </InsertParameters>
                 <UpdateParameters>
                     <asp:Parameter DbType="Date" Name="Дата" />
-                    <asp:Parameter Name="Номер_Карты" Type="Int32" />
-                    <asp:Parameter Name="Сумма_Продажи" Type="Decimal" />
-                    <asp:Parameter Name="Номер_Продажи" Type="Int32" />
+                    <asp:Parameter Name="Комментарий" Type="String" />
+                    <asp:Parameter Name="Номер_Прихода" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
         </div>
         <div>
             <br />
             <h4>Детальные документы</h4>
-            <asp:LinkButton ID="DetailedSells" runat="server" OnClick="DetailedSells_Click">Все документы</asp:LinkButton><br />
-            <asp:LinkButton ID="DetailedSellDocument" runat="server" OnClick="DetailedSellDocument_Click">Выбранный документ</asp:LinkButton>
+            <asp:LinkButton ID="DetailedBuys" runat="server" OnClick="DetailedBuys_Click">Все документы</asp:LinkButton><br />
+            <asp:LinkButton ID="DetailedBuyDocument" runat="server" OnClick="DetailedBuyDocument_Click">Выбранный документ</asp:LinkButton>
         </div>
         <div>
             <br />
