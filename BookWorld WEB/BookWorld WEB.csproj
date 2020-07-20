@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddDataToCatalogs.aspx" />
     <Content Include="CheckBuys.aspx" />
     <Content Include="CheckSells.aspx" />
     <Content Include="default.aspx" />
@@ -81,6 +82,13 @@
     <Content Include="XmlJsonForDocuments.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDataToCatalogs.aspx.cs">
+      <DependentUpon>AddDataToCatalogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDataToCatalogs.aspx.designer.cs">
+      <DependentUpon>AddDataToCatalogs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CheckBuys.aspx.cs">
       <DependentUpon>CheckBuys.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

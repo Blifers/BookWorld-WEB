@@ -50,5 +50,10 @@ namespace BookWorld_WEB
         {
             Response.Redirect("XmlJsonForCatalogs.aspx?table=жанры&isxml=false");
         }
+
+        protected void AddWithJsonOrXmlLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AddDataToCatalogs.aspx?table=Жанры");
+        }
     }
 }

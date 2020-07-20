@@ -46,6 +46,9 @@
             <asp:Label ID="Label1" runat="server" Text="Введите название"></asp:Label><br />
             <asp:TextBox ID="TitleTextBox" runat="server"></asp:TextBox><br /><br />
             <asp:Button ID="AddButton" runat="server" Text="Добавить" OnClick="AddButton_Click" />
+            <br />
+            <br />
+            <asp:LinkButton ID="AddWithJsonOrXmlLinkButton" runat="server" OnClick="AddWithJsonOrXmlLinkButton_Click">Добавить с использованием JSON и XML</asp:LinkButton>
         </div>
         <div>
             <br />
