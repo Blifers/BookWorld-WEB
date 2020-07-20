@@ -106,16 +106,22 @@ namespace BookWorld_WEB
             }
             if (cnt)
             {
-                
-                ComText = "Select * from Товары WHERE Тип_Товара="+Type+" for XML AUTO";
+                if(IsXML)
+                    ComText = "Select * from Товары WHERE Тип_Товара="+Type+" for XML AUTO";
+                else
+                    ComText = "Select * from Товары WHERE Тип_Товара="+Type+" for JSON AUTO";
                 if (Type != 0)
                 {  
                     var Connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["BookWorldDataBaseConnectionString1"].ConnectionString);
                     Connection.Open();
                     var Command = new SqlCommand(ComText, Connection);
+                    Response.Write(ComText);
                     var reader = Command.ExecuteReader();
-                    reader.Read();
-                    string text = reader[0].ToString();
+                    string text = "";
+                    while (reader.Read())
+                    {
+                        text += reader[0].ToString();
+                    }
                     string normalForm = "<h1>" + TableName.ToUpper() + "</h1><br/>";
                     Response.Clear();
                     try
@@ -156,8 +162,11 @@ namespace BookWorld_WEB
                     Connection.Open();
                     var Command = new SqlCommand(CommandText, Connection);
                     var reader = Command.ExecuteReader();
-                    reader.Read();
-                    string text = reader.GetString(0);
+                    string text="";
+                    while (reader.Read())
+                    {
+                        text += reader[0].ToString();
+                    }
                     string normalForm = "<h1>" + TableName.ToUpper() + "</h1><br/>";
                     Response.Clear();
                     try
