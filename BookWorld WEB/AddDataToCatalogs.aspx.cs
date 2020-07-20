@@ -82,7 +82,6 @@ namespace BookWorld_WEB
             TextBox.Text = "";
             Response.Write("<script>alert('Успешно добавлены данные')</script>");
             TextBox.Focus();
-            //Response.Write();
         }
 
         protected void ClearButton_Click(object sender, EventArgs e)
