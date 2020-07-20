@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddDataToCatalogs.aspx" />
+    <Content Include="ChangeDataInCatalogs.aspx" />
     <Content Include="CheckBuys.aspx" />
     <Content Include="CheckSells.aspx" />
     <Content Include="default.aspx" />
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="AddDataToCatalogs.aspx.designer.cs">
       <DependentUpon>AddDataToCatalogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeDataInCatalogs.aspx.cs">
+      <DependentUpon>ChangeDataInCatalogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeDataInCatalogs.aspx.designer.cs">
+      <DependentUpon>ChangeDataInCatalogs.aspx</DependentUpon>
     </Compile>
     <Compile Include="CheckBuys.aspx.cs">
       <DependentUpon>CheckBuys.aspx</DependentUpon>

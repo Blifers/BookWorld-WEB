@@ -11,7 +11,7 @@ namespace BookWorld_WEB
 {
 
 
-    public partial class AddDataToCatalogs
+    public partial class ChangeDataInCatalogs
     {
 
         /// <summary>
@@ -24,31 +24,58 @@ namespace BookWorld_WEB
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// DropDownList1 элемент управления.
+        /// GridView1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// XmlAddButton элемент управления.
+        /// Label1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button XmlAddButton;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// JsonAddButton элемент управления.
+        /// XmlDeleteButton элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button JsonAddButton;
+        protected global::System.Web.UI.WebControls.Button XmlDeleteButton;
+
+        /// <summary>
+        /// JsonDeleteButton элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button JsonDeleteButton;
+
+        /// <summary>
+        /// XmlChangeButton элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button XmlChangeButton;
+
+        /// <summary>
+        /// JsonChangeButton элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button JsonChangeButton;
 
         /// <summary>
         /// TextBox элемент управления.

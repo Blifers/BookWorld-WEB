@@ -48,10 +48,10 @@ namespace BookWorld_WEB
             string CommandText = "";
             if (TextBox.Text[0] == '<')
             {
-                CommandText = "declare @XmlDocument as xml\ndeclare @nx as int \nset @XmlDocument = N'" + TextBox.Text + "'\nExec sp_xml_preparedocument @nx OUTPUT,@XmlDocument\n";
-                string[] toParse = TextBox.Text.Split('<');
-                string table = toParse[1].Substring(0, toParse[1].Length - 1);
-                switch (table)
+                CommandText = "declare @XmlDocument as xml\ndeclare @nx as int\nset @XmlDocument = N'";
+                CommandText += @"" + @TextBox.Text;
+                CommandText += "'\nExec sp_xml_preparedocument @nx OUTPUT,@XmlDocument\n";
+                switch (DropDownList1.SelectedValue)
                 {
                     case "Жанры":
                         CommandText += "INSERT INTO Жанры Select * FROM OPENXML(@nx,'/Жанры/Жанр',2) With (Наименование nvarchar(40))\nExec sp_xml_removedocument @nx";
@@ -79,8 +79,8 @@ namespace BookWorld_WEB
             Connection.Open();
             Command.ExecuteNonQuery();
             Connection.Close();
-            TextBox.Text = "";
             Response.Write("<script>alert('Успешно добавлены данные')</script>");
+            TextBox.Text = "";       
             TextBox.Focus();
         }
 
