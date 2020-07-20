@@ -53,7 +53,7 @@ namespace BookWorld_WEB
 
         protected void AddWithJsonOrXmlLinkButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AddDataToCatalogs.aspx?table=Жанры");
+            Response.Redirect("AddDataToCatalogs.aspx");
         }
     }
 }
