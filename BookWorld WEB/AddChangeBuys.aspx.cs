@@ -12,12 +12,12 @@ namespace BookWorld_WEB
 {
     public partial class AddChangeBuys : Page
     {
-        private string BlankForAddingXML= "<Приходы><Приход Дата=""2020-07-20/" Комментарий="Получили товар от нового поставщика BookWit"><Товар Код_Товара = "3" Количество="2"/><Товар Код_Товара = "4" Количество="1"/></Приход></Приходы>"
+        private string BlankForAddingXML = "<Приходы>\n\t<Приход Дата=\"гггг-мм-дд\" Комментарий=\"Введите комментарий\">\n\t\t<Товар Код_Товара = \"Введите код товара\" Количество=\"Введите количество товара\"/>\n\t</Приход>\n</Приходы>";
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string CommandText = "Select * From Продажа";
+            string CommandText = "Select * From Приход";
             SqlConnection Connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["BookWorldDataBaseConnectionString1"].ConnectionString);
             SqlCommand Command = new SqlCommand(CommandText, Connection);
             Connection.Open();
@@ -30,7 +30,7 @@ namespace BookWorld_WEB
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string CommandText = "Select * From Состав_Продажи Where Номер_Продажи="+GridView1.SelectedRow.Cells[1].Text;
+            string CommandText = "Select * From Состав_Прихода Where Номер_Прихода="+GridView1.SelectedRow.Cells[1].Text;
             SqlConnection Connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["BookWorldDataBaseConnectionString1"].ConnectionString);
             SqlCommand Command = new SqlCommand(CommandText, Connection);
             Connection.Open();
@@ -53,12 +53,46 @@ namespace BookWorld_WEB
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
+            string CommandText = "";
+            SqlConnection Connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["BookWorldDataBaseConnectionString1"].ConnectionString);
+            SqlCommand Command = new SqlCommand();
+            Command.Connection = Connection;
 
+            if (TextBox1.Text[0] == '<')
+            {
+                string headerText = "declare @XmlDocument as xml\ndeclare @nx as int\nSet @XmlDocument = N'" + TextBox1.Text + "'\nExec sp_xml_preparedocument @nx OUTPUT, @XmlDocument\n";
+                CommandText = headerText;
+                if (Label1.Text == "adding")
+                {
+                    CommandText += "INSERT INTO Приход Select * from OPENXML(@nx,'/Приходы/Приход',3) with (Дата date,Комментарий nvarchar(300))\nExec sp_xml_removedocument @nx";
+                    Command.CommandText = CommandText;
+                    Connection.Open();
+                    Command.ExecuteNonQuery();
+                    string GetLastOneAdded = "select top 1 Номер_Прихода from Приход order by Номер_Прихода desc";
+                    Command.CommandText = GetLastOneAdded;
+                    var reader = Command.ExecuteReader();
+                    reader.Read();
+                    int NumberOfDoc = reader.GetInt32(0);
+                    reader.Close();
+                    //should looking for more starts
+                    string find = "<Товар";
+                    int index = TextBox1.Text.IndexOf(find);
+                    TextBox1.Text=TextBox1.Text.Insert(index + find.Length, @" Номер_Прихода=""" + NumberOfDoc + @""" ");
+                    CommandText = "declare @XmlDocument as xml\ndeclare @nx as int\nSet @XmlDocument = N'" + TextBox1.Text + "'\nExec sp_xml_preparedocument @nx OUTPUT, @XmlDocument\n";
+                    CommandText += "Insert Into Состав_Прихода Select * From OPENXML(@nx,'/Приходы/Приход/Товар',3) with (Номер_Прихода int,Код_Товара int,Количество int)\nExec sp_xml_removedocument @nx";
+                    Command.CommandText = CommandText;
+                    Command.ExecuteNonQuery();
+                    Connection.Close();
+                    Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+                }
+            }
+            
         }
 
         protected void BlankForAddingButton_Click(object sender, EventArgs e)
         {
             Label1.Text = "adding";
+            TextBox1.Text = BlankForAddingXML;
         }
     }
 }
