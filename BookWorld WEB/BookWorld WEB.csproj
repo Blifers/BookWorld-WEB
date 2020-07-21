@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddChangeBuys.aspx" />
     <Content Include="AddDataToCatalogs.aspx" />
     <Content Include="ChangeDataInCatalogs.aspx" />
     <Content Include="CheckBuys.aspx" />
@@ -83,6 +84,13 @@
     <Content Include="XmlJsonForDocuments.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddChangeBuys.aspx.cs">
+      <DependentUpon>AddChangeBuys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddChangeBuys.aspx.designer.cs">
+      <DependentUpon>AddChangeBuys.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddDataToCatalogs.aspx.cs">
       <DependentUpon>AddDataToCatalogs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

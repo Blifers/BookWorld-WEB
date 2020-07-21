@@ -119,5 +119,10 @@ namespace BookWorld_WEB
                 Response.Write("<script>alert('Выберите документ')</script>");
             }
         }
+
+        protected void AddChangeButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AddChangeBuys.aspx");
+        }
     }
 }

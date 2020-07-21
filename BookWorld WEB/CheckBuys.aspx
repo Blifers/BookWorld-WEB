@@ -43,6 +43,10 @@
         </div>
         <div>
             <br />
+            <asp:LinkButton ID="AddChangeButton" runat="server" OnClick="AddChangeButton_Click">Добавить изменить с помощью Json и XML</asp:LinkButton>
+        </div>
+        <div>
+            <br />
             <h4>Детальные документы</h4>
             <asp:LinkButton ID="DetailedBuysXML" runat="server" OnClick="DetailedBuysXML_Click">Все документы в XML</asp:LinkButton><br />
             <asp:LinkButton ID="DetailedBuyDocumentXML" runat="server" OnClick="DetailedBuyDocumentXML_Click">Выбранный документ в XML</asp:LinkButton><br />
