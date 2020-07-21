@@ -69,6 +69,24 @@ namespace BookWorld_WEB
         protected global::System.Web.UI.WebControls.Button BlankForAddingButtonJson;
 
         /// <summary>
+        /// BlankForDeletingButtonXML элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BlankForDeletingButtonXML;
+
+        /// <summary>
+        /// BlankForDeletingButtonJSON элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BlankForDeletingButtonJSON;
+
+        /// <summary>
         /// TextBox1 элемент управления.
         /// </summary>
         /// <remarks>

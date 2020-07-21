@@ -14,7 +14,8 @@ namespace BookWorld_WEB
     {
         private string BlankForAddingXML = "<Приходы>\n\t<Приход Дата=\"гггг-мм-дд\" Комментарий=\"Введите комментарий\">\n\t\t<Товар Код_Товара = \"Введите код товара\" Количество=\"Введите количество товара\"/>\n\t</Приход>\n</Приходы>";
         private string BlankForAddingJSON = "{\"Приходы\":{\n\"Дата\":\"гггг-мм-дд\",\"Комментарий\":\"Введите комментарий\",\"Товар\":[\n\t{\"Код_Товара\":Введите код товара,\"Количество\":Введите количество товара}\n]}}";
-
+        private string BlankForDeletingXML = "<Приходы>\n\t<Номер_Прихода>\n\t\tВведите номер документа для удаления\n\t</Номер_Прихода>\n</Приходы>";
+        private string BlankForDeletingJSON = "[{\"Номер_Прихода\":\"Введите номер документа для удаления\"}]";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -63,6 +64,7 @@ namespace BookWorld_WEB
             {
                 string headerText = "declare @XmlDocument as xml\ndeclare @nx as int\nSet @XmlDocument = N'" + TextBox1.Text + "'\nExec sp_xml_preparedocument @nx OUTPUT, @XmlDocument\n";
                 CommandText = headerText;
+                //Добавление
                 if (Label1.Text == "adding")
                 {
                     CommandText += "INSERT INTO Приход Select * from OPENXML(@nx,'/Приходы/Приход',3) with (Дата date,Комментарий nvarchar(300))\nExec sp_xml_removedocument @nx";
@@ -92,15 +94,29 @@ namespace BookWorld_WEB
                     Connection.Close();
                     Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
                 }
-
+                //Удаление
+                if (Label1.Text == "deleting")
+                {
+                    CommandText += "Delete from Состав_Прихода Where Номер_Прихода = (Select Номер_Прихода FROM OPENXML(@nx,'/Приходы',2) with (Номер_Прихода int))\nExec sp_xml_removedocument @nx";
+                    Command.CommandText = CommandText;
+                    Connection.Open();
+                    Command.ExecuteNonQuery();
+                    CommandText = headerText;
+                    CommandText+= "Delete from Приход Where Номер_Прихода = (Select Номер_Прихода FROM OPENXML(@nx,'/Приходы',2) with (Номер_Прихода int))\nExec sp_xml_removedocument @nx";
+                    Command.CommandText = CommandText;
+                    Command.ExecuteNonQuery();
+                    Connection.Close();
+                    Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+                }
 
 
 
             }
-            else if (TextBox1.Text[0] == '{')
+            else if (TextBox1.Text[0] == '{' || TextBox1.Text[0] == '[')
             {
                 string headerText = "declare @json as nvarchar(max)\nset @json=N'" + TextBox1.Text + "'\n";
                 CommandText = headerText;
+                //Добавление
                 if (Label1.Text == "adding")
                 {
                     CommandText += "Insert into Приход Select * from OPENJSON(@json) with (Дата date N'$.\"Приходы\".\"Дата\"',Комментарий nvarchar(300) N'$.\"Приходы\".\"Комментарий\"')";
@@ -132,6 +148,20 @@ namespace BookWorld_WEB
                     Connection.Close();
                     Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
                 }
+                //Удаление
+                if (Label1.Text == "deleting")
+                {
+                    CommandText+= "Delete FROM Состав_Прихода Where Номер_Прихода=(Select Номер_Прихода from OPENJSON(@json) with (Номер_Прихода int))";
+                    Command.CommandText = CommandText;
+                    Connection.Open();
+                    Command.ExecuteNonQuery();
+                    CommandText = headerText;
+                    CommandText += "Delete FROM Приход Where Номер_Прихода=(Select Номер_Прихода from OPENJSON(@json) with (Номер_Прихода int))";
+                    Command.CommandText = CommandText;
+                    Command.ExecuteNonQuery();
+                    Connection.Close();
+                    Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+                }
             }
             
         }
@@ -146,6 +176,18 @@ namespace BookWorld_WEB
         {
             Label1.Text = "adding";
             TextBox1.Text = BlankForAddingJSON;
+        }
+
+        protected void BlankForDeletingButtonXML_Click(object sender, EventArgs e)
+        {
+            Label1.Text = "deleting";
+            TextBox1.Text = BlankForDeletingXML;
+        }
+
+        protected void BlankForDeletingButtonJSON_Click(object sender, EventArgs e)
+        {
+            Label1.Text = "deleting";
+            TextBox1.Text = BlankForDeletingJSON;
         }
     }
 }
