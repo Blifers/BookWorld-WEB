@@ -37,7 +37,8 @@
         <div>
             <asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
             <br />
-            <asp:Button ID="BlankForAddingButton" runat="server" Text="Добавить заготовку для добавления документа" OnClick="BlankForAddingButton_Click" />
+            <asp:Button ID="BlankForAddingButton" runat="server" Text="Добавить заготовку для добавления документа в XML" OnClick="BlankForAddingButton_Click" Width="370px" />&nbsp&nbsp
+            <asp:Button ID="BlankForAddingButtonJson" runat="server" Text="Добавить заготовку для добавления документа в JSON" Width="370px" OnClick="BlankForAddingButtonJson_Click"/>
             <br />
             <br />
             <asp:TextBox ID="TextBox1" runat="server" Height="150px" Width="750px" TextMode="MultiLine"></asp:TextBox>
