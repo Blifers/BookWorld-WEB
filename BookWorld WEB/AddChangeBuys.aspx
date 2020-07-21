@@ -35,9 +35,16 @@
             </asp:GridView>
         </div>
         <div>
+            <asp:Label ID="Label1" runat="server" Visible="False"></asp:Label>
             <br />
+            <asp:Button ID="BlankForAddingButton" runat="server" Text="Добавить заготовку для добавления документа" OnClick="BlankForAddingButton_Click" />
             <br />
             <asp:TextBox ID="TextBox1" runat="server" Height="150px" Width="500px" TextMode="MultiLine"></asp:TextBox>
+
+            <br />
+            <asp:Button ID="ClearButton" runat="server" Text="Очистить" OnClick="ClearButton_Click" />
+            <br /><br />
+            <asp:Button ID="SubmitButton" runat="server" Text="Отправить" OnClick="SubmitButton_Click" />
 
         </div>
 

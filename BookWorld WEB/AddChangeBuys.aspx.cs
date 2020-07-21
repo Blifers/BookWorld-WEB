@@ -12,6 +12,9 @@ namespace BookWorld_WEB
 {
     public partial class AddChangeBuys : Page
     {
+        private string BlankForAddingXML= "<Приходы><Приход Дата=""2020-07-20/" Комментарий="Получили товар от нового поставщика BookWit"><Товар Код_Товара = "3" Количество="2"/><Товар Код_Товара = "4" Количество="1"/></Приход></Приходы>"
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             string CommandText = "Select * From Продажа";
@@ -41,6 +44,21 @@ namespace BookWorld_WEB
         protected void BackToDefaultButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("default.aspx");
+        }
+
+        protected void ClearButton_Click(object sender, EventArgs e)
+        {
+            TextBox1.Text = "";
+        }
+
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BlankForAddingButton_Click(object sender, EventArgs e)
+        {
+            Label1.Text = "adding";
         }
     }
 }
