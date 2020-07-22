@@ -14,6 +14,8 @@ namespace BookWorld_WEB
     {
         private string BlankForAddingXML = "<Приходы>\n\t<Приход Дата=\"гггг-мм-дд\" Комментарий=\"Введите комментарий\">\n\t\t<Товар Код_Товара = \"Введите код товара\" Количество=\"Введите количество товара\"/>\n\t</Приход>\n</Приходы>";
         private string BlankForAddingJSON = "{\"Приходы\":{\n\"Дата\":\"гггг-мм-дд\",\"Комментарий\":\"Введите комментарий\",\"Товар\":[\n\t{\"Код_Товара\":Введите код товара,\"Количество\":Введите количество товара}\n]}}";
+        private string BlankForUpdatingJSON = "{\"Приходы\":{\n\"Дата\":\"гггг-мм-дд\",\"Комментарий\":\"Введите комментарий\",";
+        private string BlankForUpdatingXML= "<Приходы>\n\t<Приход Дата=\"гггг-мм-дд\" Комментарий=\"Введите комментарий\">\n\t\t";
         private string BlankForDeletingXML = "<Приходы>\n\t<Номер_Прихода>\n\t\tВведите номер документа для удаления\n\t</Номер_Прихода>\n</Приходы>";
         private string BlankForDeletingJSON = "[{\"Номер_Прихода\":\"Введите номер документа для удаления\"}]";
 
@@ -28,6 +30,8 @@ namespace BookWorld_WEB
             adapter.Fill(dt);
             GridView1.DataSource = dt;
             GridView1.DataBind();
+
+            
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,11 +82,11 @@ namespace BookWorld_WEB
                     int NumberOfDoc = reader.GetInt32(0);
                     reader.Close();
                     string find = "<Товар";
-                    int startWith=0;
-                    while (startWith!=-1)
+                    int startWith = 0;
+                    while (startWith != -1)
                     {
                         startWith = TextBox1.Text.IndexOf(find, startWith + find.Length);
-                        if (startWith!=-1)
+                        if (startWith != -1)
                             TextBox1.Text = TextBox1.Text.Insert(startWith + find.Length, @" Номер_Прихода=""" + NumberOfDoc + @"""");
                     }
 
@@ -102,13 +106,31 @@ namespace BookWorld_WEB
                     Connection.Open();
                     Command.ExecuteNonQuery();
                     CommandText = headerText;
-                    CommandText+= "Delete from Приход Where Номер_Прихода = (Select Номер_Прихода FROM OPENXML(@nx,'/Приходы',2) with (Номер_Прихода int))\nExec sp_xml_removedocument @nx";
+                    CommandText += "Delete from Приход Where Номер_Прихода = (Select Номер_Прихода FROM OPENXML(@nx,'/Приходы',2) with (Номер_Прихода int))\nExec sp_xml_removedocument @nx";
                     Command.CommandText = CommandText;
                     Command.ExecuteNonQuery();
                     Connection.Close();
                     Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
                 }
+                if (Label1.Text == "changing")
+                {
 
+                    CommandText= "declare @XmlDocument as xml\ndeclare @nx as int\nSet @XmlDocument = N'" + TextBox1.Text + "'\nExec sp_xml_preparedocument @nx OUTPUT, @XmlDocument\n";
+                    CommandText += "Update Приход Set Дата=(Select Дата FROM OPENXML(@nx,'/Приходы/Приход',3) with (Дата date)),Комментарий=(Select Комментарий FROM OPENXML(@nx,'/Приходы/Приход',3) with (Комментарий nvarchar(300))) Where Номер_Прихода =" + GridView1.SelectedRow.Cells[1].Text;
+                    Command.CommandText = CommandText;
+                    Connection.Open();
+                    Command.ExecuteNonQuery();
+                    CommandText = "declare @XmlDocument as xml\ndeclare @nx as int\nSet @XmlDocument = N'" + TextBox1.Text + "'\nExec sp_xml_preparedocument @nx OUTPUT, @XmlDocument\n";
+                    CommandText += "Delete from Состав_Прихода Where Номер_Прихода = (Select TOP 1 Номер_Прихода FROM OPENXML(@nx, '/Приходы/Приход/Товар', 3) with(Номер_Прихода int))\nExec sp_xml_removedocument @nx";
+                    Command.CommandText = CommandText;
+                    Command.ExecuteNonQuery();
+                    CommandText = "declare @XmlDocument as xml\ndeclare @nx as int\nSet @XmlDocument = N'" + TextBox1.Text + "'\nExec sp_xml_preparedocument @nx OUTPUT, @XmlDocument\n";
+                    CommandText += "Insert Into Состав_Прихода Select * From OPENXML(@nx,'/Приходы/Приход/Товар',3) with (Номер_Прихода int,Код_Товара int,Количество int)\nExec sp_xml_removedocument @nx";
+                    Command.CommandText = CommandText;
+                    Command.ExecuteNonQuery();
+                    Connection.Close();
+                    Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+                }
 
 
             }
@@ -162,6 +184,26 @@ namespace BookWorld_WEB
                     Connection.Close();
                     Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
                 }
+                //Изменение
+                if (Label1.Text == "changing")
+                {
+                    CommandText = "DECLARE @json NVARCHAR(MAX)=N'" + TextBox1.Text + "'\n";
+                    CommandText += "Update Приход SET Дата=(SELECT Дата FROM OPENJSON(@json) with (Дата date N'$.\"Приходы\".\"Дата\"')), Комментарий=(Select Комментарий FROM OPENJSON(@json) with (Комментарий nvarchar(300) N'$.\"Приходы\".\"Комментарий\"')) Where Номер_Прихода =" + GridView1.SelectedRow.Cells[1].Text;
+                    Connection.Open();
+                    Command.CommandText = CommandText;
+                    Command.ExecuteNonQuery();
+                    CommandText = "DECLARE @json NVARCHAR(MAX)=N'" + TextBox1.Text + "'\n";
+                    CommandText += "Delete FROM Состав_Прихода Where Номер_Прихода = (Select TOP 1 Номер_Прихода from OPENJSON(@json, N'$.\"Приходы\".\"Товар\"') with(Номер_Прихода int))";
+                    Command.CommandText = CommandText;
+                    Command.ExecuteNonQuery();
+                    CommandText = "DECLARE @json NVARCHAR(MAX)=N'" + TextBox1.Text + "'\n";
+                    CommandText += "INSERT INTO Состав_Прихода SELECT * FROM OPENJSON(@json, N'$.\"Приходы\".\"Товар\"') with (Номер_Прихода int,Код_Товара int,Количество int)";
+                    Command.CommandText = CommandText;
+                    Command.ExecuteNonQuery();
+                    Connection.Close();
+                    Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+
+                }
             }
             
         }
@@ -188,6 +230,51 @@ namespace BookWorld_WEB
         {
             Label1.Text = "deleting";
             TextBox1.Text = BlankForDeletingJSON;
+        }
+
+        protected void BlankForUpdationgButtonXML_Click(object sender, EventArgs e)
+        {
+            if (GridView1.SelectedRow == null)
+            {
+                Response.Write("<script>alert('Сначала выберите документ')</script>");
+            }
+            else
+            {
+                Label1.Text = "changing";
+                string CommandText = "Select * From Состав_Прихода as Товар Where Номер_Прихода=" + GridView1.SelectedRow.Cells[1].Text + " for xml auto";
+                SqlConnection Connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["BookWorldDataBaseConnectionString1"].ConnectionString);
+                SqlCommand Command = new SqlCommand(CommandText, Connection);
+                Connection.Open();
+                var reader = Command.ExecuteReader();
+                reader.Read();
+                string text = reader.GetString(0);
+                TextBox1.Text = BlankForUpdatingXML + text+ "\n\t</Приход>\n</Приходы>";
+                reader.Close();
+                Connection.Close();
+            }
+          
+        }
+
+        protected void BlankForUpdatingButtonJSON_Click(object sender, EventArgs e)
+        {
+            if (GridView1.SelectedRow == null)
+            {
+                Response.Write("<script>alert('Сначала выберите документ')</script>");
+            }
+            else
+            {
+                Label1.Text = "changing";
+                string CommandText = "Select * From Состав_Прихода Where Номер_Прихода=" + GridView1.SelectedRow.Cells[1].Text + " for json auto,Root('Товар')";
+                SqlConnection Connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["BookWorldDataBaseConnectionString1"].ConnectionString);
+                SqlCommand Command = new SqlCommand(CommandText, Connection);
+                Connection.Open();
+                var reader = Command.ExecuteReader();
+                reader.Read();
+                string text = reader.GetString(0);
+                TextBox1.Text = BlankForUpdatingJSON + text.Remove(0, 1) + "}";
+                reader.Close();
+                Connection.Close();
+            }
         }
     }
 }

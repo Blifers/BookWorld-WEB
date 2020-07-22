@@ -43,6 +43,9 @@
             <asp:Button ID="BlankForDeletingButtonXML" runat="server" Text="Добавить заготовку для удаления документа в XML" Width="370px" OnClick="BlankForDeletingButtonXML_Click" />&nbsp&nbsp
             <asp:Button ID="BlankForDeletingButtonJSON" runat="server" Text="Добавить заготовку для удаления документа в JSON" Width="370px" OnClick="BlankForDeletingButtonJSON_Click" />
             <br />
+            <asp:Button ID="BlankForUpdationgButtonXML" runat="server" Text="Добавить заготовку для изменения документа в XML" Width="370px" OnClick="BlankForUpdationgButtonXML_Click"/>&nbsp&nbsp
+            <asp:Button ID="BlankForUpdatingButtonJSON" runat="server" Text="Добавить заготовку для изменения документа в JSON" Width="370px" OnClick="BlankForUpdatingButtonJSON_Click"/>
+            <br />
             <asp:TextBox ID="TextBox1" runat="server" Height="150px" Width="750px" TextMode="MultiLine"></asp:TextBox>
 
             <br />
