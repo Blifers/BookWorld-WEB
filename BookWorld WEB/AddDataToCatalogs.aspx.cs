@@ -11,12 +11,13 @@ namespace BookWorld_WEB
 {
     public partial class AddDataToCatalogs : System.Web.UI.Page
     {
-        private string XmlBlanketForGenres = "<Жанры>\n<Жанр>\n<Наименование>Не изменяйте общую структуру документа</Наименование>\n</Жанр>\n</Жанры>";
+        private string XmlBlanketForGenres = "<Жанры>\n\t<Жанр>\n\t<Наименование>Не изменяйте общую структуру документа</Наименование>\n\t</Жанр>\n</Жанры>";
         private string JsonBlanketForGenres = @"[{""Наименование"":""Введите данные сюда""}]";
+        private string XmlBlanketForTypes = "<Типы>\n\t<Тип>\n\t\t<Наименование>Не изменяйте общую структуру документа</Наименование>\n\t\t</Тип>\n</Типы>";
+        private string JsonBlanketForTypes = @"[{""Наименование"":""Введите данные сюда""}]";
+        private string XmlBlanketForGoods = "<Товары>\n\t<Товар>\n\t\t<Тип_Товара>Введите данные сюда</Тип_Товара>\n\t\t<Жанр>Удалите эту строчку, если тип товара не равен 1</Жанр>\n\t\t<Наименование>Введите данные сюда</Наименование>\n\t\t<Цена>Введите данные сюда</Цена>\n\t\t<Остаток>Введите данные сюда</Остаток>\n\t</Товар>\n</Товары>";
+        private string JsonBlanketForGoods = "[{\"Тип_Товара\":\"Введите данные сюда\",\"Жанр\":\"Удалите этот элемент, если тип товара не равен 1\",\"Наименование\":\"Введите данные сюда\",\"Цена\":\"Введите данные сюда\",\"Остаток\":\"Введите данные сюда\"}]";
 
-
-
-        private string XmlBlanketForTypes = "<Типы>\n<Тип>\n<Наименование>Не изменяйте общую структуру документа</Наименование>\n</Тип>\n</Типы>";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -32,6 +33,9 @@ namespace BookWorld_WEB
                     break;
                 case "Тип товара":
                     TextBox.Text = XmlBlanketForTypes;
+                    break;
+                case "Товары":
+                    TextBox.Text = XmlBlanketForGoods;
                     break;
                 default:
                     TextBox.Text = "Такого бланка пока в системе нет";
@@ -56,8 +60,11 @@ namespace BookWorld_WEB
                     case "Жанры":
                         CommandText += "INSERT INTO Жанры Select * FROM OPENXML(@nx,'/Жанры/Жанр',2) With (Наименование nvarchar(40))\nExec sp_xml_removedocument @nx";
                         break;
-                    case "Типы":
+                    case "Тип товара":
                         CommandText += "INSERT INTO Тип_Товара Select * FROM OPENXML(@nx,'/Типы/Тип',2) With (Наименование nvarchar(40))\nExec sp_xml_removedocument @nx";
+                        break;
+                    case "Товары":
+                        CommandText += "INSERT INTO Товары SELECT * FROM OPENXML(@nx,'/Товары/Товар',2) With (Тип_Товара int,Жанр int,Наименование nvarchar(80),Цена money,Остаток int)\nExec sp_xml_removedocument @nx";
                         break;
                     default:
                         break;
@@ -70,6 +77,12 @@ namespace BookWorld_WEB
                 {
                     case "Жанры":
                         CommandText += "INSERT INTO Жанры Select * from OPENJSON(@json) With (Наименование nvarchar(40))";
+                        break;
+                    case "Тип товара":
+                        CommandText += "INSERT INTO Тип_Товара Select * from OPENJSON(@json) With (Наименование nvarchar(40))";
+                        break;
+                    case "Товары":
+                        CommandText+= "INSERT INTO Товары SELECT * from OPENJSON(@json) With (Тип_Товара int,Жанр int,Наименование nvarchar(80),Цена money,Остаток int)";
                         break;
                     default:
                         break;
@@ -99,7 +112,10 @@ namespace BookWorld_WEB
                     TextBox.Text = JsonBlanketForGenres;
                     break;
                 case "Тип товара":
-                    TextBox.Text ="";
+                    TextBox.Text =JsonBlanketForTypes;
+                    break;
+                case "Товары":
+                    TextBox.Text = JsonBlanketForGoods;
                     break;
                 default:
                     TextBox.Text = "Такого бланка пока в системе нет";

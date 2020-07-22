@@ -69,6 +69,24 @@ namespace BookWorld_WEB
         protected global::System.Web.UI.WebControls.Button AddButton;
 
         /// <summary>
+        /// AddWithJsonOrXmlLinkButton элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton AddWithJsonOrXmlLinkButton;
+
+        /// <summary>
+        /// ChangeWithJsonOrXmlLinkButton элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ChangeWithJsonOrXmlLinkButton;
+
+        /// <summary>
         /// XmlLinkButton элемент управления.
         /// </summary>
         /// <remarks>

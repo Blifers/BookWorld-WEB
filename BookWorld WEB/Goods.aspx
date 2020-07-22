@@ -75,6 +75,11 @@
             </div>
         </div>
         <div>
+            <asp:LinkButton ID="AddWithJsonOrXmlLinkButton" runat="server" OnClick="AddWithJsonOrXmlLinkButton_Click">Добавить с использованием JSON и XML</asp:LinkButton>
+            <br />
+            <asp:LinkButton ID="ChangeWithJsonOrXmlLinkButton" runat="server" OnClick="ChangeWithJsonOrXmlLinkButton_Click">Изменить данные с использованием JSON и XML</asp:LinkButton>
+        </div>
+        <div>
             <br />
             <asp:LinkButton ID="XmlLinkButton" runat="server" OnClick="XmlLinkButton_Click">Посмотреть в XML</asp:LinkButton><br />
             <asp:LinkButton ID="JsonLinkButton" runat="server" OnClick="JsonLinkButton_Click">Посмотреть в JSON</asp:LinkButton>

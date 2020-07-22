@@ -50,5 +50,14 @@ namespace BookWorld_WEB
         {
             Response.Redirect("XmlJsonForCatalogs.aspx?table=тип&isxml=false");
         }
+        protected void AddWithJsonOrXmlLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AddDataToCatalogs.aspx");
+        }
+
+        protected void ChangeWithJsonOrXmlLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ChangeDataInCatalogs.aspx?table=типы");
+        }
     }
 }
