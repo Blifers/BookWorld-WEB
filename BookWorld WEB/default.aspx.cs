@@ -53,5 +53,10 @@ namespace BookWorld_WEB
         {
             Response.Redirect("CheckBuys.aspx");
         }
+
+        protected void AsmxLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Service.asmx");
+        }
     }
 }
