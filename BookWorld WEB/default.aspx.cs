@@ -64,12 +64,61 @@ namespace BookWorld_WEB
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
             Response.Redirect("ToShowASMX.aspx?type=goodsJson");
-
         }
 
         protected void ASMXPage_Click(object sender, EventArgs e)
         {
             Response.Redirect("Service.asmx");
+        }
+
+        protected void BuysASMXtoXML_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=buysXml");
+        }
+
+        protected void BuysASMXtoJSON_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=buysJson");
+        }
+
+        protected void GenresASMXtoXML_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=genresXml");
+        }
+
+        protected void GenresASMXtoJSON_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=genresJson");
+        }
+
+        protected void TypesASMXtoXML_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=typesXml");
+        }
+
+        protected void TypesASMXtoJSON_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=typesJson");
+        }
+
+        protected void WorkersASMXtoXML_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=workersXml");
+        }
+
+        protected void WorkersASMXtoJSON_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=workersJson");
+        }
+
+        protected void CustomersASMXtoXML_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=customersXml");
+        }
+
+        protected void CustomersASMXtoJSON_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=customersJson");
         }
     }
 }

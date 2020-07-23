@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3fc3fa27-3cde-496e-a997-053c0812214c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b903f1d-37c4-4f87-bced-7188c79de8aa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:50184/Service.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://praktika.somee.com/Service.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="b60da1c4-b14a-4dfc-ba27-bd18b3287b53" SourceId="1" SourceUrl="http://localhost:50184/Service.asmx?wsdl" />
-    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="1f66e143-a236-43ae-a6f2-f4e3dca3ac75" SourceId="1" SourceUrl="http://localhost:50184/Service.asmx?disco" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="94ef507c-d5b8-4c01-bf3f-31374472dd9b" SourceId="1" SourceUrl="http://praktika.somee.com/Service.asmx?disco" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="438028f4-4a07-4232-9e46-d680ccd557c9" SourceId="1" SourceUrl="http://praktika.somee.com/Service.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

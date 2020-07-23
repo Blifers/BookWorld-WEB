@@ -43,12 +43,29 @@
             <div class="auto-style2">
                 <br />
                 <h3 class="auto-style2">ASMX</h3>
-                <asp:LinkButton ID="ASMXPage" runat="server" OnClick="ASMXPage_Click">Страница asmx</asp:LinkButton>
+                <asp:LinkButton ID="ASMXPage" CssClass="auto-style3" runat="server" OnClick="ASMXPage_Click">Страница asmx</asp:LinkButton>
+                <br /><br />
+                <asp:LinkButton ID="LinkButton1" CssClass="auto-style3" runat="server" OnClick="LinkButton1_Click">Справочник Товары в Xml</asp:LinkButton>
                 <br />
-                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Товары в Xml</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton2" CssClass="auto-style3" runat="server" OnClick="LinkButton2_Click">Справочник Товары в Json</asp:LinkButton>
+                <br /><br />
+                <asp:LinkButton ID="GenresASMXtoXML" CssClass="auto-style3" runat="server" OnClick="GenresASMXtoXML_Click">Справочник Жанры в Xml</asp:LinkButton><br />
+                <asp:LinkButton ID="GenresASMXtoJSON" CssClass="auto-style3" runat="server" OnClick="GenresASMXtoJSON_Click">Справочник Жанры в Json</asp:LinkButton>
+                <br /><br />
+                <asp:LinkButton ID="TypesASMXtoXML" CssClass="auto-style3" runat="server" OnClick="TypesASMXtoXML_Click">Справочник Тип товара в Xml</asp:LinkButton><br />
+                <asp:LinkButton ID="TypesASMXtoJSON" CssClass="auto-style3" runat="server" OnClick="TypesASMXtoJSON_Click">Справочник Тип товара в Json</asp:LinkButton>
+                <br /><br />
+                <asp:LinkButton ID="WorkersASMXtoXML" CssClass="auto-style3" runat="server" OnClick="WorkersASMXtoXML_Click">Справочник Сотрудники в Xml</asp:LinkButton><br />
+                <asp:LinkButton ID="WorkersASMXtoJSON" CssClass="auto-style3" runat="server" OnClick="WorkersASMXtoJSON_Click">Справочник Сотрудники в Json</asp:LinkButton>
+                <br /><br />
+                <asp:LinkButton ID="CustomersASMXtoXML" CssClass="auto-style3" runat="server" OnClick="CustomersASMXtoXML_Click">Справочник Постоянные клиенты в Xml</asp:LinkButton><br />
+                <asp:LinkButton ID="CustomersASMXtoJSON" CssClass="auto-style3" runat="server" OnClick="CustomersASMXtoJSON_Click">Справочник Постоянные клиенты в Json</asp:LinkButton>
                 <br />
-                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Товары в Json</asp:LinkButton>
                 <br />
+                <asp:LinkButton ID="BuysASMXtoXML" CssClass="auto-style3" runat="server" OnClick="BuysASMXtoXML_Click">Документ Приход в Xml</asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="BuysASMXtoJSON" CssClass="auto-style3" runat="server" OnClick="BuysASMXtoJSON_Click">Документ Приход в Json</asp:LinkButton>
+                <br /><br />
             </div>
         </div>
     </form>

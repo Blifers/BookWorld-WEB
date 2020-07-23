@@ -29,12 +29,75 @@ namespace BookWorld_WEB.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТоварыXML", ReplyAction="*")]
         System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникТоварыXMLResponse> ПолучитьСправочникТоварыXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТоварыXMLRequest request);
         
-        // CODEGEN: Контракт генерации сообщений с именем smthResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/smth", ReplyAction="*")]
-        BookWorld_WEB.ServiceReference1.smthResponse smth(BookWorld_WEB.ServiceReference1.smthRequest request);
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьСправочникЖанрыJSONResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникЖанрыJSON", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponse ПолучитьСправочникЖанрыJSON(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/smth", ReplyAction="*")]
-        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.smthResponse> smthAsync(BookWorld_WEB.ServiceReference1.smthRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникЖанрыJSON", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponse> ПолучитьСправочникЖанрыJSONAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьСправочникЖанрыXMLResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникЖанрыXML", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponse ПолучитьСправочникЖанрыXML(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникЖанрыXML", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponse> ПолучитьСправочникЖанрыXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьСправочникТипТовараJSONResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТипТовараJSON", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponse ПолучитьСправочникТипТовараJSON(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТипТовараJSON", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponse> ПолучитьСправочникТипТовараJSONAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьСправочникТипТовараXMLResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТипТовараXML", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponse ПолучитьСправочникТипТовараXML(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТипТовараXML", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponse> ПолучитьСправочникТипТовараXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьСправочникСотрудникиJSONResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникСотрудникиJSON", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponse ПолучитьСправочникСотрудникиJSON(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникСотрудникиJSON", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponse> ПолучитьСправочникСотрудникиJSONAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьСправочникСотрудникиXMLResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникСотрудникиXML", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponse ПолучитьСправочникСотрудникиXML(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникСотрудникиXML", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponse> ПолучитьСправочникСотрудникиXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьСправочникПостоянныеКлиентыJSONResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникПостоянныеКлиентыJSON", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponse ПолучитьСправочникПостоянныеКлиентыJSON(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникПостоянныеКлиентыJSON", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponse> ПолучитьСправочникПостоянныеКлиентыJSONAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьСправочникПостоянныеКлиентыXMLResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникПостоянныеКлиентыXML", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponse ПолучитьСправочникПостоянныеКлиентыXML(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникПостоянныеКлиентыXML", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponse> ПолучитьСправочникПостоянныеКлиентыXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьДокументПриходXmlResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьДокументПриходXml", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponse ПолучитьДокументПриходXml(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьДокументПриходXml", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponse> ПолучитьДокументПриходXmlAsync(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequest request);
+        
+        // CODEGEN: Контракт генерации сообщений с именем ПолучитьДокументПриходJsonResult из пространства имен http://Microsoft.ServiceModel.Samples не отмечен как обнуляемый
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьДокументПриходJson", ReplyAction="*")]
+        BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponse ПолучитьДокументПриходJson(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ПолучитьДокументПриходJson", ReplyAction="*")]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponse> ПолучитьДокументПриходJsonAsync(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -163,15 +226,15 @@ namespace BookWorld_WEB.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class smthRequest {
+    public partial class ПолучитьСправочникЖанрыJSONRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="smth", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
-        public BookWorld_WEB.ServiceReference1.smthRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникЖанрыJSON", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequestBody Body;
         
-        public smthRequest() {
+        public ПолучитьСправочникЖанрыJSONRequest() {
         }
         
-        public smthRequest(BookWorld_WEB.ServiceReference1.smthRequestBody Body) {
+        public ПолучитьСправочникЖанрыJSONRequest(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -180,9 +243,9 @@ namespace BookWorld_WEB.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class smthRequestBody {
+    public partial class ПолучитьСправочникЖанрыJSONRequestBody {
         
-        public smthRequestBody() {
+        public ПолучитьСправочникЖанрыJSONRequestBody() {
         }
     }
     
@@ -190,15 +253,15 @@ namespace BookWorld_WEB.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class smthResponse {
+    public partial class ПолучитьСправочникЖанрыJSONResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="smthResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
-        public BookWorld_WEB.ServiceReference1.smthResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникЖанрыJSONResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponseBody Body;
         
-        public smthResponse() {
+        public ПолучитьСправочникЖанрыJSONResponse() {
         }
         
-        public smthResponse(BookWorld_WEB.ServiceReference1.smthResponseBody Body) {
+        public ПолучитьСправочникЖанрыJSONResponse(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -207,16 +270,565 @@ namespace BookWorld_WEB.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
-    public partial class smthResponseBody {
+    public partial class ПолучитьСправочникЖанрыJSONResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string smthResult;
+        public string ПолучитьСправочникЖанрыJSONResult;
         
-        public smthResponseBody() {
+        public ПолучитьСправочникЖанрыJSONResponseBody() {
         }
         
-        public smthResponseBody(string smthResult) {
-            this.smthResult = smthResult;
+        public ПолучитьСправочникЖанрыJSONResponseBody(string ПолучитьСправочникЖанрыJSONResult) {
+            this.ПолучитьСправочникЖанрыJSONResult = ПолучитьСправочникЖанрыJSONResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникЖанрыXMLRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникЖанрыXML", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequestBody Body;
+        
+        public ПолучитьСправочникЖанрыXMLRequest() {
+        }
+        
+        public ПолучитьСправочникЖанрыXMLRequest(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьСправочникЖанрыXMLRequestBody {
+        
+        public ПолучитьСправочникЖанрыXMLRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникЖанрыXMLResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникЖанрыXMLResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponseBody Body;
+        
+        public ПолучитьСправочникЖанрыXMLResponse() {
+        }
+        
+        public ПолучитьСправочникЖанрыXMLResponse(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьСправочникЖанрыXMLResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьСправочникЖанрыXMLResult;
+        
+        public ПолучитьСправочникЖанрыXMLResponseBody() {
+        }
+        
+        public ПолучитьСправочникЖанрыXMLResponseBody(string ПолучитьСправочникЖанрыXMLResult) {
+            this.ПолучитьСправочникЖанрыXMLResult = ПолучитьСправочникЖанрыXMLResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникТипТовараJSONRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникТипТовараJSON", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequestBody Body;
+        
+        public ПолучитьСправочникТипТовараJSONRequest() {
+        }
+        
+        public ПолучитьСправочникТипТовараJSONRequest(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьСправочникТипТовараJSONRequestBody {
+        
+        public ПолучитьСправочникТипТовараJSONRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникТипТовараJSONResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникТипТовараJSONResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponseBody Body;
+        
+        public ПолучитьСправочникТипТовараJSONResponse() {
+        }
+        
+        public ПолучитьСправочникТипТовараJSONResponse(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьСправочникТипТовараJSONResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьСправочникТипТовараJSONResult;
+        
+        public ПолучитьСправочникТипТовараJSONResponseBody() {
+        }
+        
+        public ПолучитьСправочникТипТовараJSONResponseBody(string ПолучитьСправочникТипТовараJSONResult) {
+            this.ПолучитьСправочникТипТовараJSONResult = ПолучитьСправочникТипТовараJSONResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникТипТовараXMLRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникТипТовараXML", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequestBody Body;
+        
+        public ПолучитьСправочникТипТовараXMLRequest() {
+        }
+        
+        public ПолучитьСправочникТипТовараXMLRequest(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьСправочникТипТовараXMLRequestBody {
+        
+        public ПолучитьСправочникТипТовараXMLRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникТипТовараXMLResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникТипТовараXMLResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponseBody Body;
+        
+        public ПолучитьСправочникТипТовараXMLResponse() {
+        }
+        
+        public ПолучитьСправочникТипТовараXMLResponse(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьСправочникТипТовараXMLResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьСправочникТипТовараXMLResult;
+        
+        public ПолучитьСправочникТипТовараXMLResponseBody() {
+        }
+        
+        public ПолучитьСправочникТипТовараXMLResponseBody(string ПолучитьСправочникТипТовараXMLResult) {
+            this.ПолучитьСправочникТипТовараXMLResult = ПолучитьСправочникТипТовараXMLResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникСотрудникиJSONRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникСотрудникиJSON", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequestBody Body;
+        
+        public ПолучитьСправочникСотрудникиJSONRequest() {
+        }
+        
+        public ПолучитьСправочникСотрудникиJSONRequest(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьСправочникСотрудникиJSONRequestBody {
+        
+        public ПолучитьСправочникСотрудникиJSONRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникСотрудникиJSONResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникСотрудникиJSONResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponseBody Body;
+        
+        public ПолучитьСправочникСотрудникиJSONResponse() {
+        }
+        
+        public ПолучитьСправочникСотрудникиJSONResponse(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьСправочникСотрудникиJSONResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьСправочникСотрудникиJSONResult;
+        
+        public ПолучитьСправочникСотрудникиJSONResponseBody() {
+        }
+        
+        public ПолучитьСправочникСотрудникиJSONResponseBody(string ПолучитьСправочникСотрудникиJSONResult) {
+            this.ПолучитьСправочникСотрудникиJSONResult = ПолучитьСправочникСотрудникиJSONResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникСотрудникиXMLRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникСотрудникиXML", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequestBody Body;
+        
+        public ПолучитьСправочникСотрудникиXMLRequest() {
+        }
+        
+        public ПолучитьСправочникСотрудникиXMLRequest(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьСправочникСотрудникиXMLRequestBody {
+        
+        public ПолучитьСправочникСотрудникиXMLRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникСотрудникиXMLResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникСотрудникиXMLResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponseBody Body;
+        
+        public ПолучитьСправочникСотрудникиXMLResponse() {
+        }
+        
+        public ПолучитьСправочникСотрудникиXMLResponse(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьСправочникСотрудникиXMLResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьСправочникСотрудникиXMLResult;
+        
+        public ПолучитьСправочникСотрудникиXMLResponseBody() {
+        }
+        
+        public ПолучитьСправочникСотрудникиXMLResponseBody(string ПолучитьСправочникСотрудникиXMLResult) {
+            this.ПолучитьСправочникСотрудникиXMLResult = ПолучитьСправочникСотрудникиXMLResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникПостоянныеКлиентыJSONRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникПостоянныеКлиентыJSON", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequestBody Body;
+        
+        public ПолучитьСправочникПостоянныеКлиентыJSONRequest() {
+        }
+        
+        public ПолучитьСправочникПостоянныеКлиентыJSONRequest(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьСправочникПостоянныеКлиентыJSONRequestBody {
+        
+        public ПолучитьСправочникПостоянныеКлиентыJSONRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникПостоянныеКлиентыJSONResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникПостоянныеКлиентыJSONResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponseBody Body;
+        
+        public ПолучитьСправочникПостоянныеКлиентыJSONResponse() {
+        }
+        
+        public ПолучитьСправочникПостоянныеКлиентыJSONResponse(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьСправочникПостоянныеКлиентыJSONResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьСправочникПостоянныеКлиентыJSONResult;
+        
+        public ПолучитьСправочникПостоянныеКлиентыJSONResponseBody() {
+        }
+        
+        public ПолучитьСправочникПостоянныеКлиентыJSONResponseBody(string ПолучитьСправочникПостоянныеКлиентыJSONResult) {
+            this.ПолучитьСправочникПостоянныеКлиентыJSONResult = ПолучитьСправочникПостоянныеКлиентыJSONResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникПостоянныеКлиентыXMLRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникПостоянныеКлиентыXML", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequestBody Body;
+        
+        public ПолучитьСправочникПостоянныеКлиентыXMLRequest() {
+        }
+        
+        public ПолучитьСправочникПостоянныеКлиентыXMLRequest(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьСправочникПостоянныеКлиентыXMLRequestBody {
+        
+        public ПолучитьСправочникПостоянныеКлиентыXMLRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьСправочникПостоянныеКлиентыXMLResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьСправочникПостоянныеКлиентыXMLResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponseBody Body;
+        
+        public ПолучитьСправочникПостоянныеКлиентыXMLResponse() {
+        }
+        
+        public ПолучитьСправочникПостоянныеКлиентыXMLResponse(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьСправочникПостоянныеКлиентыXMLResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьСправочникПостоянныеКлиентыXMLResult;
+        
+        public ПолучитьСправочникПостоянныеКлиентыXMLResponseBody() {
+        }
+        
+        public ПолучитьСправочникПостоянныеКлиентыXMLResponseBody(string ПолучитьСправочникПостоянныеКлиентыXMLResult) {
+            this.ПолучитьСправочникПостоянныеКлиентыXMLResult = ПолучитьСправочникПостоянныеКлиентыXMLResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьДокументПриходXmlRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьДокументПриходXml", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequestBody Body;
+        
+        public ПолучитьДокументПриходXmlRequest() {
+        }
+        
+        public ПолучитьДокументПриходXmlRequest(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьДокументПриходXmlRequestBody {
+        
+        public ПолучитьДокументПриходXmlRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьДокументПриходXmlResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьДокументПриходXmlResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponseBody Body;
+        
+        public ПолучитьДокументПриходXmlResponse() {
+        }
+        
+        public ПолучитьДокументПриходXmlResponse(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьДокументПриходXmlResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьДокументПриходXmlResult;
+        
+        public ПолучитьДокументПриходXmlResponseBody() {
+        }
+        
+        public ПолучитьДокументПриходXmlResponseBody(string ПолучитьДокументПриходXmlResult) {
+            this.ПолучитьДокументПриходXmlResult = ПолучитьДокументПриходXmlResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьДокументПриходJsonRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьДокументПриходJson", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequestBody Body;
+        
+        public ПолучитьДокументПриходJsonRequest() {
+        }
+        
+        public ПолучитьДокументПриходJsonRequest(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class ПолучитьДокументПриходJsonRequestBody {
+        
+        public ПолучитьДокументПриходJsonRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ПолучитьДокументПриходJsonResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ПолучитьДокументПриходJsonResponse", Namespace="http://Microsoft.ServiceModel.Samples", Order=0)]
+        public BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponseBody Body;
+        
+        public ПолучитьДокументПриходJsonResponse() {
+        }
+        
+        public ПолучитьДокументПриходJsonResponse(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples")]
+    public partial class ПолучитьДокументПриходJsonResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ПолучитьДокументПриходJsonResult;
+        
+        public ПолучитьДокументПриходJsonResponseBody() {
+        }
+        
+        public ПолучитьДокументПриходJsonResponseBody(string ПолучитьДокументПриходJsonResult) {
+            this.ПолучитьДокументПриходJsonResult = ПолучитьДокументПриходJsonResult;
         }
     }
     
@@ -294,26 +906,233 @@ namespace BookWorld_WEB.ServiceReference1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        BookWorld_WEB.ServiceReference1.smthResponse BookWorld_WEB.ServiceReference1.ServiceSoap.smth(BookWorld_WEB.ServiceReference1.smthRequest request) {
-            return base.Channel.smth(request);
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникЖанрыJSON(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequest request) {
+            return base.Channel.ПолучитьСправочникЖанрыJSON(request);
         }
         
-        public string smth() {
-            BookWorld_WEB.ServiceReference1.smthRequest inValue = new BookWorld_WEB.ServiceReference1.smthRequest();
-            inValue.Body = new BookWorld_WEB.ServiceReference1.smthRequestBody();
-            BookWorld_WEB.ServiceReference1.smthResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).smth(inValue);
-            return retVal.Body.smthResult;
+        public string ПолучитьСправочникЖанрыJSON() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникЖанрыJSON(inValue);
+            return retVal.Body.ПолучитьСправочникЖанрыJSONResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.smthResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.smthAsync(BookWorld_WEB.ServiceReference1.smthRequest request) {
-            return base.Channel.smthAsync(request);
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникЖанрыJSONAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequest request) {
+            return base.Channel.ПолучитьСправочникЖанрыJSONAsync(request);
         }
         
-        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.smthResponse> smthAsync() {
-            BookWorld_WEB.ServiceReference1.smthRequest inValue = new BookWorld_WEB.ServiceReference1.smthRequest();
-            inValue.Body = new BookWorld_WEB.ServiceReference1.smthRequestBody();
-            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).smthAsync(inValue);
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponse> ПолучитьСправочникЖанрыJSONAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникЖанрыJSONAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникЖанрыXML(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequest request) {
+            return base.Channel.ПолучитьСправочникЖанрыXML(request);
+        }
+        
+        public string ПолучитьСправочникЖанрыXML() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникЖанрыXML(inValue);
+            return retVal.Body.ПолучитьСправочникЖанрыXMLResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникЖанрыXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequest request) {
+            return base.Channel.ПолучитьСправочникЖанрыXMLAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponse> ПолучитьСправочникЖанрыXMLAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникЖанрыXMLAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникТипТовараJSON(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequest request) {
+            return base.Channel.ПолучитьСправочникТипТовараJSON(request);
+        }
+        
+        public string ПолучитьСправочникТипТовараJSON() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникТипТовараJSON(inValue);
+            return retVal.Body.ПолучитьСправочникТипТовараJSONResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникТипТовараJSONAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequest request) {
+            return base.Channel.ПолучитьСправочникТипТовараJSONAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponse> ПолучитьСправочникТипТовараJSONAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникТипТовараJSONAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникТипТовараXML(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequest request) {
+            return base.Channel.ПолучитьСправочникТипТовараXML(request);
+        }
+        
+        public string ПолучитьСправочникТипТовараXML() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникТипТовараXML(inValue);
+            return retVal.Body.ПолучитьСправочникТипТовараXMLResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникТипТовараXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequest request) {
+            return base.Channel.ПолучитьСправочникТипТовараXMLAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponse> ПолучитьСправочникТипТовараXMLAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникТипТовараXMLAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникСотрудникиJSON(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequest request) {
+            return base.Channel.ПолучитьСправочникСотрудникиJSON(request);
+        }
+        
+        public string ПолучитьСправочникСотрудникиJSON() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникСотрудникиJSON(inValue);
+            return retVal.Body.ПолучитьСправочникСотрудникиJSONResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникСотрудникиJSONAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequest request) {
+            return base.Channel.ПолучитьСправочникСотрудникиJSONAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponse> ПолучитьСправочникСотрудникиJSONAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникСотрудникиJSONAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникСотрудникиXML(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequest request) {
+            return base.Channel.ПолучитьСправочникСотрудникиXML(request);
+        }
+        
+        public string ПолучитьСправочникСотрудникиXML() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникСотрудникиXML(inValue);
+            return retVal.Body.ПолучитьСправочникСотрудникиXMLResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникСотрудникиXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequest request) {
+            return base.Channel.ПолучитьСправочникСотрудникиXMLAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponse> ПолучитьСправочникСотрудникиXMLAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникСотрудникиXMLAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникПостоянныеКлиентыJSON(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequest request) {
+            return base.Channel.ПолучитьСправочникПостоянныеКлиентыJSON(request);
+        }
+        
+        public string ПолучитьСправочникПостоянныеКлиентыJSON() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникПостоянныеКлиентыJSON(inValue);
+            return retVal.Body.ПолучитьСправочникПостоянныеКлиентыJSONResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникПостоянныеКлиентыJSONAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequest request) {
+            return base.Channel.ПолучитьСправочникПостоянныеКлиентыJSONAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponse> ПолучитьСправочникПостоянныеКлиентыJSONAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникПостоянныеКлиентыJSONAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникПостоянныеКлиентыXML(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequest request) {
+            return base.Channel.ПолучитьСправочникПостоянныеКлиентыXML(request);
+        }
+        
+        public string ПолучитьСправочникПостоянныеКлиентыXML() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникПостоянныеКлиентыXML(inValue);
+            return retVal.Body.ПолучитьСправочникПостоянныеКлиентыXMLResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьСправочникПостоянныеКлиентыXMLAsync(BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequest request) {
+            return base.Channel.ПолучитьСправочникПостоянныеКлиентыXMLAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponse> ПолучитьСправочникПостоянныеКлиентыXMLAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьСправочникПостоянныеКлиентыXMLAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьДокументПриходXml(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequest request) {
+            return base.Channel.ПолучитьДокументПриходXml(request);
+        }
+        
+        public string ПолучитьДокументПриходXml() {
+            BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьДокументПриходXml(inValue);
+            return retVal.Body.ПолучитьДокументПриходXmlResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьДокументПриходXmlAsync(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequest request) {
+            return base.Channel.ПолучитьДокументПриходXmlAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponse> ПолучитьДокументПриходXmlAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьДокументПриходXmlAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponse BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьДокументПриходJson(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequest request) {
+            return base.Channel.ПолучитьДокументПриходJson(request);
+        }
+        
+        public string ПолучитьДокументПриходJson() {
+            BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequestBody();
+            BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponse retVal = ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьДокументПриходJson(inValue);
+            return retVal.Body.ПолучитьДокументПриходJsonResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponse> BookWorld_WEB.ServiceReference1.ServiceSoap.ПолучитьДокументПриходJsonAsync(BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequest request) {
+            return base.Channel.ПолучитьДокументПриходJsonAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponse> ПолучитьДокументПриходJsonAsync() {
+            BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequest inValue = new BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequest();
+            inValue.Body = new BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonRequestBody();
+            return ((BookWorld_WEB.ServiceReference1.ServiceSoap)(this)).ПолучитьДокументПриходJsonAsync(inValue);
         }
     }
 }

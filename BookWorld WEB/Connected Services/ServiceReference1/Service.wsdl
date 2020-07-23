@@ -22,13 +22,103 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="smth">
+      <s:element name="ПолучитьСправочникЖанрыJSON">
         <s:complexType />
       </s:element>
-      <s:element name="smthResponse">
+      <s:element name="ПолучитьСправочникЖанрыJSONResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="smthResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникЖанрыJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьСправочникЖанрыXML">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьСправочникЖанрыXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникЖанрыXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьСправочникТипТовараJSON">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьСправочникТипТовараJSONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникТипТовараJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьСправочникТипТовараXML">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьСправочникТипТовараXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникТипТовараXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьСправочникСотрудникиJSON">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьСправочникСотрудникиJSONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникСотрудникиJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьСправочникСотрудникиXML">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьСправочникСотрудникиXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникСотрудникиXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьСправочникПостоянныеКлиентыJSON">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьСправочникПостоянныеКлиентыJSONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникПостоянныеКлиентыJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьСправочникПостоянныеКлиентыXML">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьСправочникПостоянныеКлиентыXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникПостоянныеКлиентыXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьДокументПриходXml">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьДокументПриходXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьДокументПриходXmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ПолучитьДокументПриходJson">
+        <s:complexType />
+      </s:element>
+      <s:element name="ПолучитьДокументПриходJsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьДокументПриходJsonResult" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -46,11 +136,65 @@
   <wsdl:message name="ПолучитьСправочникТоварыXMLSoapOut">
     <wsdl:part name="parameters" element="tns:ПолучитьСправочникТоварыXMLResponse" />
   </wsdl:message>
-  <wsdl:message name="smthSoapIn">
-    <wsdl:part name="parameters" element="tns:smth" />
+  <wsdl:message name="ПолучитьСправочникЖанрыJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникЖанрыJSON" />
   </wsdl:message>
-  <wsdl:message name="smthSoapOut">
-    <wsdl:part name="parameters" element="tns:smthResponse" />
+  <wsdl:message name="ПолучитьСправочникЖанрыJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникЖанрыJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникЖанрыXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникЖанрыXML" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникЖанрыXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникЖанрыXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникТипТовараJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникТипТовараJSON" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникТипТовараJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникТипТовараJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникТипТовараXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникТипТовараXML" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникТипТовараXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникТипТовараXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникСотрудникиJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникСотрудникиJSON" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникСотрудникиJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникСотрудникиJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникСотрудникиXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникСотрудникиXML" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникСотрудникиXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникСотрудникиXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникПостоянныеКлиентыJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникПостоянныеКлиентыJSON" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникПостоянныеКлиентыJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникПостоянныеКлиентыJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникПостоянныеКлиентыXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникПостоянныеКлиентыXML" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьСправочникПостоянныеКлиентыXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьСправочникПостоянныеКлиентыXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьДокументПриходXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьДокументПриходXml" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьДокументПриходXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьДокументПриходXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьДокументПриходJsonSoapIn">
+    <wsdl:part name="parameters" element="tns:ПолучитьДокументПриходJson" />
+  </wsdl:message>
+  <wsdl:message name="ПолучитьДокументПриходJsonSoapOut">
+    <wsdl:part name="parameters" element="tns:ПолучитьДокументПриходJsonResponse" />
   </wsdl:message>
   <wsdl:portType name="ServiceSoap">
     <wsdl:operation name="ПолучитьСправочникТоварыJSON">
@@ -61,9 +205,45 @@
       <wsdl:input message="tns:ПолучитьСправочникТоварыXMLSoapIn" />
       <wsdl:output message="tns:ПолучитьСправочникТоварыXMLSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="smth">
-      <wsdl:input message="tns:smthSoapIn" />
-      <wsdl:output message="tns:smthSoapOut" />
+    <wsdl:operation name="ПолучитьСправочникЖанрыJSON">
+      <wsdl:input message="tns:ПолучитьСправочникЖанрыJSONSoapIn" />
+      <wsdl:output message="tns:ПолучитьСправочникЖанрыJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникЖанрыXML">
+      <wsdl:input message="tns:ПолучитьСправочникЖанрыXMLSoapIn" />
+      <wsdl:output message="tns:ПолучитьСправочникЖанрыXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникТипТовараJSON">
+      <wsdl:input message="tns:ПолучитьСправочникТипТовараJSONSoapIn" />
+      <wsdl:output message="tns:ПолучитьСправочникТипТовараJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникТипТовараXML">
+      <wsdl:input message="tns:ПолучитьСправочникТипТовараXMLSoapIn" />
+      <wsdl:output message="tns:ПолучитьСправочникТипТовараXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникСотрудникиJSON">
+      <wsdl:input message="tns:ПолучитьСправочникСотрудникиJSONSoapIn" />
+      <wsdl:output message="tns:ПолучитьСправочникСотрудникиJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникСотрудникиXML">
+      <wsdl:input message="tns:ПолучитьСправочникСотрудникиXMLSoapIn" />
+      <wsdl:output message="tns:ПолучитьСправочникСотрудникиXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникПостоянныеКлиентыJSON">
+      <wsdl:input message="tns:ПолучитьСправочникПостоянныеКлиентыJSONSoapIn" />
+      <wsdl:output message="tns:ПолучитьСправочникПостоянныеКлиентыJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникПостоянныеКлиентыXML">
+      <wsdl:input message="tns:ПолучитьСправочникПостоянныеКлиентыXMLSoapIn" />
+      <wsdl:output message="tns:ПолучитьСправочникПостоянныеКлиентыXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьДокументПриходXml">
+      <wsdl:input message="tns:ПолучитьДокументПриходXmlSoapIn" />
+      <wsdl:output message="tns:ПолучитьДокументПриходXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьДокументПриходJson">
+      <wsdl:input message="tns:ПолучитьДокументПриходJsonSoapIn" />
+      <wsdl:output message="tns:ПолучитьДокументПриходJsonSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
@@ -86,8 +266,89 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="smth">
-      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/smth" style="document" />
+    <wsdl:operation name="ПолучитьСправочникЖанрыJSON">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникЖанрыJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникЖанрыXML">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникЖанрыXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникТипТовараJSON">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТипТовараJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникТипТовараXML">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТипТовараXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникСотрудникиJSON">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникСотрудникиJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникСотрудникиXML">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникСотрудникиXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникПостоянныеКлиентыJSON">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникПостоянныеКлиентыJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникПостоянныеКлиентыXML">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникПостоянныеКлиентыXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьДокументПриходXml">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьДокументПриходXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьДокументПриходJson">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьДокументПриходJson" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -116,8 +377,89 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="smth">
-      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/smth" style="document" />
+    <wsdl:operation name="ПолучитьСправочникЖанрыJSON">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникЖанрыJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникЖанрыXML">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникЖанрыXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникТипТовараJSON">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТипТовараJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникТипТовараXML">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТипТовараXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникСотрудникиJSON">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникСотрудникиJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникСотрудникиXML">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникСотрудникиXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникПостоянныеКлиентыJSON">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникПостоянныеКлиентыJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьСправочникПостоянныеКлиентыXML">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникПостоянныеКлиентыXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьДокументПриходXml">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьДокументПриходXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ПолучитьДокументПриходJson">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьДокументПриходJson" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -128,10 +470,10 @@
   </wsdl:binding>
   <wsdl:service name="Service">
     <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
-      <soap:address location="http://localhost:50184/Service.asmx" />
+      <soap:address location="http://praktika.somee.com/Service.asmx" />
     </wsdl:port>
     <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
-      <soap12:address location="http://localhost:50184/Service.asmx" />
+      <soap12:address location="http://praktika.somee.com/Service.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

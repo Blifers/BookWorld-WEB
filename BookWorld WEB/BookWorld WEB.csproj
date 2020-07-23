@@ -77,7 +77,34 @@
     <Content Include="ChangeDataInCatalogs.aspx" />
     <Content Include="CheckBuys.aspx" />
     <Content Include="CheckSells.aspx" />
-    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.smthResponse.datasource">
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходJsonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьДокументПриходXmlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыJSONResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникЖанрыXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыJSONResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникПостоянныеКлиентыXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиJSONResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникСотрудникиXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараJSONResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникТипТовараXMLResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServiceReference1\BookWorld_WEB.ServiceReference1.ПолучитьСправочникТоварыJSONResponse.datasource">
