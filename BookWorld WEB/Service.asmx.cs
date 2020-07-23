@@ -8,6 +8,9 @@ using Newtonsoft.Json;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 using System.Data;
+using System.IO;
+using System.Xml.Serialization;
+using System.Text;
 
 namespace BookWorld_WEB
 {
@@ -24,10 +27,10 @@ namespace BookWorld_WEB
 
         [WebMethod]
         [ScriptMethod(ResponseFormat=ResponseFormat.Json)]
-        public void ПолучитьСправочникТовары()
+        public void ПолучитьСправочникТоварыJSON()
         {
-            Context.Response.ContentEncoding = System.Text.Encoding.UTF8;
-            Context.Response.ContentType = "text/plain";
+            Context.Response.ContentEncoding = Encoding.UTF8;
+            //Context.Response.ContentType = "text/plain";
             Context.Response.Write(getGoods());
         }
 
@@ -43,6 +46,39 @@ namespace BookWorld_WEB
             string myResponse = JsonConvert.SerializeObject(dt);
 
             return myResponse;
-        } 
+        }
+
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Xml)]
+        public void ПолучитьСправочникТоварыXML()
+        {
+            Context.Response.ContentEncoding = Encoding.UTF8;
+            //Context.Response.ContentType = "text/plain";
+            Context.Response.Write(getGoodsXml());
+        }
+
+        private string getGoodsXml()
+        {
+            SqlConnection Connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["BookWorldDataBaseConnectionString1"].ConnectionString);
+            SqlCommand Command = new SqlCommand("Select * From Товары", Connection);
+            Connection.Open();
+            DataTable dt = new DataTable();
+            dt.TableName = "Товары";
+            SqlDataAdapter adapter = new SqlDataAdapter(Command);
+            adapter.Fill(dt);
+
+            string myReturn = string.Empty;
+            using (var memoryStream = new MemoryStream()) 
+            {
+                using (TextWriter streamWriter = new StreamWriter(memoryStream))
+                {
+                    var xmlSerializer = new XmlSerializer(typeof(DataTable));
+                    xmlSerializer.Serialize(streamWriter, dt);
+                    myReturn = Encoding.UTF8.GetString(memoryStream.ToArray()); 
+                }
+            }
+            return myReturn;
+        }
     }
 }
