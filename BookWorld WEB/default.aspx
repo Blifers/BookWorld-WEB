@@ -43,7 +43,12 @@
             <div class="auto-style2">
                 <br />
                 <h3 class="auto-style2">ASMX</h3>
-                <asp:LinkButton ID="AsmxLinkButton" CssClass="auto-style3" runat="server" OnClick="AsmxLinkButton_Click">ASMX Service</asp:LinkButton><br />
+                <asp:LinkButton ID="ASMXPage" runat="server" OnClick="ASMXPage_Click">Страница asmx</asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Товары в Xml</asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Товары в Json</asp:LinkButton>
+                <br />
             </div>
         </div>
     </form>

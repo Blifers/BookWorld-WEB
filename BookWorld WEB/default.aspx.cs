@@ -5,11 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace BookWorld_WEB
 {
     public partial class _default : System.Web.UI.Page
     {
-        ServiceReference.ServiceSoap 
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -56,7 +56,18 @@ namespace BookWorld_WEB
             Response.Redirect("CheckBuys.aspx");
         }
 
-        protected void AsmxLinkButton_Click(object sender, EventArgs e)
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=goodsXml");
+        }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ToShowASMX.aspx?type=goodsJson");
+
+        }
+
+        protected void ASMXPage_Click(object sender, EventArgs e)
         {
             Response.Redirect("Service.asmx");
         }

@@ -87,12 +87,30 @@ namespace BookWorld_WEB
         protected global::System.Web.UI.WebControls.LinkButton BuysLinkButton;
 
         /// <summary>
-        /// AsmxLinkButton элемент управления.
+        /// ASMXPage элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton AsmxLinkButton;
+        protected global::System.Web.UI.WebControls.LinkButton ASMXPage;
+
+        /// <summary>
+        /// LinkButton1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+
+        /// <summary>
+        /// LinkButton2 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
     }
 }

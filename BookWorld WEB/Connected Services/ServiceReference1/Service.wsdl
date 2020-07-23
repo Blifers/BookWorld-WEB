@@ -6,13 +6,31 @@
         <s:complexType />
       </s:element>
       <s:element name="ПолучитьСправочникТоварыJSONResponse">
-        <s:complexType />
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникТоварыJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
       </s:element>
       <s:element name="ПолучитьСправочникТоварыXML">
         <s:complexType />
       </s:element>
       <s:element name="ПолучитьСправочникТоварыXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ПолучитьСправочникТоварыXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="smth">
         <s:complexType />
+      </s:element>
+      <s:element name="smthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="smthResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
       </s:element>
     </s:schema>
   </wsdl:types>
@@ -28,6 +46,12 @@
   <wsdl:message name="ПолучитьСправочникТоварыXMLSoapOut">
     <wsdl:part name="parameters" element="tns:ПолучитьСправочникТоварыXMLResponse" />
   </wsdl:message>
+  <wsdl:message name="smthSoapIn">
+    <wsdl:part name="parameters" element="tns:smth" />
+  </wsdl:message>
+  <wsdl:message name="smthSoapOut">
+    <wsdl:part name="parameters" element="tns:smthResponse" />
+  </wsdl:message>
   <wsdl:portType name="ServiceSoap">
     <wsdl:operation name="ПолучитьСправочникТоварыJSON">
       <wsdl:input message="tns:ПолучитьСправочникТоварыJSONSoapIn" />
@@ -36,6 +60,10 @@
     <wsdl:operation name="ПолучитьСправочникТоварыXML">
       <wsdl:input message="tns:ПолучитьСправочникТоварыXMLSoapIn" />
       <wsdl:output message="tns:ПолучитьСправочникТоварыXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smth">
+      <wsdl:input message="tns:smthSoapIn" />
+      <wsdl:output message="tns:smthSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
@@ -51,6 +79,15 @@
     </wsdl:operation>
     <wsdl:operation name="ПолучитьСправочникТоварыXML">
       <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/ПолучитьСправочникТоварыXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smth">
+      <soap:operation soapAction="http://Microsoft.ServiceModel.Samples/smth" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -79,13 +116,22 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="smth">
+      <soap12:operation soapAction="http://Microsoft.ServiceModel.Samples/smth" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Service">
     <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
-      <soap:address location="http://praktika.somee.com/Service.asmx" />
+      <soap:address location="http://localhost:50184/Service.asmx" />
     </wsdl:port>
     <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
-      <soap12:address location="http://praktika.somee.com/Service.asmx" />
+      <soap12:address location="http://localhost:50184/Service.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
