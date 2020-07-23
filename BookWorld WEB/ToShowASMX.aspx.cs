@@ -17,12 +17,12 @@ namespace BookWorld_WEB
             switch (Command)
             {
                 case "goodsXml":
-                    text = client.ПолучитьСправочникТоварыJSON();
+                    text = client.ПолучитьСправочникТоварыXML();
                     Response.Clear();
                     Response.Write(text);
                     break;
                 case "goodsJson":
-                    text = client.ПолучитьСправочникТоварыXML();
+                    text = client.ПолучитьСправочникТоварыJSON();
                     Response.Clear();
                     Response.Write(text);
                     break;
