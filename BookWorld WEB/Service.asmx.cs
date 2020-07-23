@@ -17,11 +17,11 @@ namespace BookWorld_WEB
     /// <summary>
     /// Сводное описание для Service
     /// </summary>
-    [WebService(Namespace = "http://tempuri.org/")]
+    [WebService(Namespace = "http://Microsoft.ServiceModel.Samples")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // Чтобы разрешить вызывать веб-службу из скрипта с помощью ASP.NET AJAX, раскомментируйте следующую строку. 
-    // [System.Web.Script.Services.ScriptService]
+    //[System.Web.Script.Services.ScriptService]
     public class Service : System.Web.Services.WebService
     {
 
@@ -30,7 +30,7 @@ namespace BookWorld_WEB
         public void ПолучитьСправочникТоварыJSON()
         {
             Context.Response.ContentEncoding = Encoding.UTF8;
-            //Context.Response.ContentType = "text/plain";
+            Context.Response.ContentType = "text/plain";
             Context.Response.Write(getGoods());
         }
 
